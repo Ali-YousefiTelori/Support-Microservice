@@ -1,4 +1,6 @@
-﻿using System;
+﻿using EasyMicroservices.Cores.Interfaces;
+using EasyMicroservices.SupportsMicroservice.Database.Schemas;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace EasyMicroservices.SupportsMicroservice.Database.Entities
 {
-    internal class TicketAssignEntity
+    public class TicketSupportTimeHistoryEntity : TicketSupportTimeHistorySchema , IIdSchema<long>
     {
+        public long Id { get; set; }
     }
 }

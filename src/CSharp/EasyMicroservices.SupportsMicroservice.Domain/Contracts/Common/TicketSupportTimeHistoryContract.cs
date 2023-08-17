@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EasyMicroservices.SupportsMicroservice.Contracts.Common
 {
-    public class TicketAssignContract :  IUniqueIdentitySchema, ISoftDeleteSchema, IDateTimeSchema
+    public class TicketSupportTimeHistoryContract :  IUniqueIdentitySchema, ISoftDeleteSchema, IDateTimeSchema
     {
         public long Id { get; set; }
         public long TicketId { get; set; }

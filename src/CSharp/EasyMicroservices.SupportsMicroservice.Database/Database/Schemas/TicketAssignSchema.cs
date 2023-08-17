@@ -15,6 +15,5 @@ namespace EasyMicroservices.SupportsMicroservice.Database.Schemas
         public DateTime? DeletedDateTime { get; set; }
         public DateTime CreationDateTime { get; set; }
         public DateTime? ModificationDateTime { get; set; }
-
     }
 }
