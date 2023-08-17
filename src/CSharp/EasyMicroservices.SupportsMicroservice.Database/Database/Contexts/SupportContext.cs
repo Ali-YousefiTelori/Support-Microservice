@@ -14,6 +14,7 @@ namespace EasyMicroservices.SupportsMicroservice.Database.Contexts
 
         public DbSet<TicketEntity> Tickets { get; set; }
         public DbSet<TicketHistoryEntity> TicketHistory { get; set; }
+        public DbSet<TicketDepartmentEntity> TicketDepartment { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -42,6 +43,20 @@ namespace EasyMicroservices.SupportsMicroservice.Database.Contexts
             modelBuilder.Entity<DepartmentEntity>(model =>
             {
                 model.HasKey(x => x.Id);
+            });
+            modelBuilder.Entity<TicketDepartmentEntity>(model =>
+            {
+                model.HasKey(x => x.Id);
+
+                modelBuilder.Entity<TicketDepartmentEntity>()
+                .HasOne(bc => bc.Ticket)
+                .WithMany(b => b.TicketDepartment)
+                .HasForeignKey(bc => bc.TicketId);
+
+                modelBuilder.Entity<TicketDepartmentEntity>()
+                .HasOne(bc => bc.Department)
+                .WithMany(b => b.TicketDepartment)
+                .HasForeignKey(bc => bc.DepartmentId);
             });
         }
     }

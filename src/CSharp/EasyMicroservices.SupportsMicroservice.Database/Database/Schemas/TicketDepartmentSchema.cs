@@ -5,12 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EasyMicroservices.SupportsMicroservice.Contracts.Common
+namespace EasyMicroservices.SupportsMicroservice.Database.Schemas
 {
-    public class DepartmentContract : IUniqueIdentitySchema, ISoftDeleteSchema, IDateTimeSchema
+    public class TicketDepartmentSchema : IUniqueIdentitySchema, ISoftDeleteSchema, IDateTimeSchema
     {
-        public long Id { get; set; }
-        public string Title { get; set; }
         public string UniqueIdentity { get; set; }
         public bool IsDeleted { get; set; }
         public DateTime? DeletedDateTime { get; set; }

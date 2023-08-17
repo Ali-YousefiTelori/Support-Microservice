@@ -8,10 +8,12 @@ using System.Threading.Tasks;
 
 namespace EasyMicroservices.SupportsMicroservice.Database.Entities
 {
-    public class DepartmentEntity : DepartmentSchema, IIdSchema<long>
+    public class TicketDepartmentEntity : TicketDepartmentSchema , IIdSchema<long>
     {
         public long Id { get; set; }
-        public ICollection<TicketDepartmentEntity> TicketDepartment { get; set; }
-
+        public long DepartmentId { get; set; }
+        public DepartmentEntity Department { get; set; }
+        public long TicketId { get; set; }
+        public TicketEntity Ticket { get; set; }
     }
 }
