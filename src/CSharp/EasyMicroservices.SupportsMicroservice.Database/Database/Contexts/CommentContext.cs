@@ -39,7 +39,10 @@ namespace EasyMicroservices.SupportsMicroservice.Database.Contexts
                 .WithMany(x => x.TicketHistory)
                 .HasForeignKey(x => x.TicketId);
             });
-
+            modelBuilder.Entity<DepartmentEntity>(model =>
+            {
+                model.HasKey(x => x.Id);
+            });
         }
     }
 }
