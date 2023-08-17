@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EasyMicroservices.SupportsMicroservice.DataTypes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,8 +10,10 @@ namespace EasyMicroservices.SupportsMicroservice.Contracts.Requests
     public class TicketUpdateRequestContract
     {
         public long Id { get; set; }
-        public long TicketId { get; set; }
-        public string Content { get; set; }
+        public string Title { get; set; }
+        public StatusType Status { get; set; }
+        public SensitivityStatusType SensitivityStatus { get; set; }
+        public int? Priority { get; set; }
         public string UniqueIdentity { get; set; }
     }
 }

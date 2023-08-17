@@ -52,6 +52,8 @@ namespace EasyMicroservices.SupportsMicroservice.WebApi
             builder.Services.AddScoped((serviceProvider) => new DependencyManager().GetContractLogic<TicketHistoryEntity, TicketHistoryCreateRequestContract, TicketHistoryUpdateRequestContract, TicketHistoryContract>());
             builder.Services.AddScoped((serviceProvider) => new DependencyManager().GetContractLogic<DepartmentEntity, DepartmentCreateRequestContract, DepartmentUpdateRequestContract, DepartmentContract>());
             builder.Services.AddScoped((serviceProvider) => new DependencyManager().GetContractLogic<TicketDepartmentEntity, TicketDepartmentCreateRequestContract, TicketDepartmentUpdateRequestContract, TicketDepartmentContract>());
+            builder.Services.AddScoped((serviceProvider) => new DependencyManager().GetContractLogic<TicketSupportTimeHistoryEntity, TicketSupportTimeHistoryCreateRequestContract, TicketSupportTimeHistoryUpdateRequestContract, TicketSupportTimeHistoryContract>());
+            builder.Services.AddScoped((serviceProvider) => new DependencyManager().GetContractLogic<TicketAssignEntity, TicketAssignCreateRequestContract, TicketAssignUpdateRequestContract, TicketAssignContract>());
             builder.Services.AddScoped<IDatabaseBuilder>(serviceProvider => new DatabaseBuilder());
    
             builder.Services.AddScoped<IDependencyManager>(service => new DependencyManager());

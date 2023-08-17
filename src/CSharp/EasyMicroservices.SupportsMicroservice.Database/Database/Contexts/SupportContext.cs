@@ -57,6 +57,14 @@ namespace EasyMicroservices.SupportsMicroservice.Database.Contexts
                 .HasOne(bc => bc.Department)
                 .WithMany(b => b.TicketDepartment)
                 .HasForeignKey(bc => bc.DepartmentId);
+           });
+            modelBuilder.Entity<TicketSupportTimeHistoryEntity>(model =>
+            {
+                model.HasKey(x => x.Id);
+            });
+            modelBuilder.Entity<TicketAssignEntity>(model =>
+            {
+                model.HasKey(x => x.Id);
             });
         }
     }

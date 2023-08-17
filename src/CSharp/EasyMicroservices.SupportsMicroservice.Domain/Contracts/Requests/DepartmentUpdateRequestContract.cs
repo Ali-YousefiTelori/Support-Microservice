@@ -11,6 +11,5 @@ namespace EasyMicroservices.SupportsMicroservice.Contracts.Requests
         public long Id { get; set; }
         public string Title { get; set; }
         public string UniqueIdentity { get; set; }
-        public bool IsDeleted { get; set; }
     }
 }
