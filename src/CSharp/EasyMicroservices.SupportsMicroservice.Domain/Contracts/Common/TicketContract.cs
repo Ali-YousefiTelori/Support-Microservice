@@ -6,13 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EasyMicroservices.SupportsMicroservice.Database.Schemas
+namespace EasyMicroservices.SupportsMicroservice.Contracts.Common
 {
-    public class TicketSchema : IUniqueIdentitySchema, ISoftDeleteSchema, IDateTimeSchema
+    public class TiketCotract : IUniqueIdentitySchema, ISoftDeleteSchema, IDateTimeSchema
     {
+        public long Id { get; set; }
         public string Title { get; set; }
         public StatusType Status { get; set; }
-        public SensitivityStatusType sensitivityStatus { get; set; }
+        public SensitivityStatusType SensitivityStatus { get; set; }
         public int? Priority { get; set; }
         public string UniqueIdentity { get; set; }
         public bool IsDeleted { get; set; }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EasyMicroservices.SupportsMicroservice.DataTypes
+namespace EasyMicroservices.SupportsMicroservice.Contracts.Responses
 {
-    public enum StatusType
+    internal class TicketUpdateRequestContract
     {
     }
 }

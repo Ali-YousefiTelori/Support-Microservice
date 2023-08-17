@@ -12,7 +12,8 @@ namespace EasyMicroservices.SupportsMicroservice.Database.Contexts
             _builder = builder;
         }
 
-        public DbSet<SupportEntity> Supports { get; set; }
+        public DbSet<TicketEntity> Tickets { get; set; }
+        public DbSet<TicketHistoryEntity> TicketHistory { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -26,9 +27,17 @@ namespace EasyMicroservices.SupportsMicroservice.Database.Contexts
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<SupportEntity>(model =>
+            modelBuilder.Entity<TicketEntity>(model =>
             {
                 model.HasKey(x => x.Id);
+            });
+            modelBuilder.Entity<TicketHistoryEntity>(model =>
+            {
+                model.HasKey(x => x.Id);
+
+                model.HasOne(x => x.TicketEntity)
+                .WithMany(x => x.TicketHistory)
+                .HasForeignKey(x => x.TicketId);
             });
 
         }

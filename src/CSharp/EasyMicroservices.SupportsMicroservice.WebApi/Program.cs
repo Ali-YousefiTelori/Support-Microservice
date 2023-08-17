@@ -14,6 +14,7 @@ using EasyMicroservices.SupportsMicroservice.Database;
 using EasyMicroservices.SupportsMicroservice.Interfaces;
 using EasyMicroservices.SupportsMicroservice;
 using EasyMicroservices.SupportsMicroservice.Contracts.Common;
+using EasyMicroservices.SupportsMicroservice.Contracts.Requests;
 
 namespace EasyMicroservices.SupportsMicroservice.WebApi
 {
@@ -47,7 +48,8 @@ namespace EasyMicroservices.SupportsMicroservice.WebApi
             string webRootPath = @Directory.GetCurrentDirectory();
 
             builder.Services.AddHttpContextAccessor();
-            builder.Services.AddScoped((serviceProvider) => new DependencyManager().GetContractLogic<SupportEntity, SupportContract, SupportContract, SupportContract>());
+            builder.Services.AddScoped((serviceProvider) => new DependencyManager().GetContractLogic<TicketEntity, TicketCreateRequestContract, TicketUpdateRequestContract, TicketContract>());
+            builder.Services.AddScoped((serviceProvider) => new DependencyManager().GetContractLogic<TicketHistoryEntity, TicketHistoryCreateRequestContract, TicketHistoryUpdateRequestContract, TicketHistoryContract>());
             builder.Services.AddScoped<IDatabaseBuilder>(serviceProvider => new DatabaseBuilder());
    
             builder.Services.AddScoped<IDependencyManager>(service => new DependencyManager());
