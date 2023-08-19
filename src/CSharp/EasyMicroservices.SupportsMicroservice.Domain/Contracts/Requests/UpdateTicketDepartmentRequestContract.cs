@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace EasyMicroservices.SupportsMicroservice.Contracts.Requests
 {
-    public class DepartmentUpdateRequestContract
+    public class UpdateTicketDepartmentRequestContract
     {
         public long Id { get; set; }
-        public string Title { get; set; }
+        public long DepartmentId { get; set; }
+        public long TicketId { get; set; }
         public string UniqueIdentity { get; set; }
     }
 }

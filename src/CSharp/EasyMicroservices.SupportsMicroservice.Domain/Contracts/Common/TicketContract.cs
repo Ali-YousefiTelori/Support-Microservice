@@ -12,8 +12,8 @@ namespace EasyMicroservices.SupportsMicroservice.Contracts.Common
     {
         public long Id { get; set; }
         public string Title { get; set; }
-        public StatusType Status { get; set; }
-        public SensitivityStatusType SensitivityStatus { get; set; }
+        public TicketStatusType Status { get; set; }
+        public TicketSensitivityStatusType SensitivityStatus { get; set; }
         public int? Priority { get; set; }
         public string UniqueIdentity { get; set; }
         public bool IsDeleted { get; set; }

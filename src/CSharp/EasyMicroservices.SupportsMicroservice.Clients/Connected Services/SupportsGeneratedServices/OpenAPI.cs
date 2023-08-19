@@ -211,7 +211,7 @@ namespace Supports.GeneratedServices
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<Int64MessageContract> AddAsync(DepartmentCreateRequestContract body)
+        public virtual System.Threading.Tasks.Task<Int64MessageContract> AddAsync(CreateDepartmentRequestContract body)
         {
             return AddAsync(body, System.Threading.CancellationToken.None);
         }
@@ -219,7 +219,7 @@ namespace Supports.GeneratedServices
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<Int64MessageContract> AddAsync(DepartmentCreateRequestContract body, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<Int64MessageContract> AddAsync(CreateDepartmentRequestContract body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Department/Add");
@@ -289,7 +289,7 @@ namespace Supports.GeneratedServices
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<DepartmentContractMessageContract> UpdateAsync(DepartmentUpdateRequestContract body)
+        public virtual System.Threading.Tasks.Task<DepartmentContractMessageContract> UpdateAsync(UpdateDepartmentRequestContract body)
         {
             return UpdateAsync(body, System.Threading.CancellationToken.None);
         }
@@ -297,7 +297,7 @@ namespace Supports.GeneratedServices
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<DepartmentContractMessageContract> UpdateAsync(DepartmentUpdateRequestContract body, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<DepartmentContractMessageContract> UpdateAsync(UpdateDepartmentRequestContract body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Department/Update");
@@ -969,7 +969,7 @@ namespace Supports.GeneratedServices
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<Int64MessageContract> AddAsync(TicketCreateRequestContract body)
+        public virtual System.Threading.Tasks.Task<Int64MessageContract> AddAsync(CreateTicketRequestContract body)
         {
             return AddAsync(body, System.Threading.CancellationToken.None);
         }
@@ -977,7 +977,7 @@ namespace Supports.GeneratedServices
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<Int64MessageContract> AddAsync(TicketCreateRequestContract body, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<Int64MessageContract> AddAsync(CreateTicketRequestContract body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Ticket/Add");
@@ -1047,7 +1047,7 @@ namespace Supports.GeneratedServices
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<TicketContractMessageContract> UpdateAsync(TicketUpdateRequestContract body)
+        public virtual System.Threading.Tasks.Task<TicketContractMessageContract> UpdateAsync(UpdateTicketRequestContract body)
         {
             return UpdateAsync(body, System.Threading.CancellationToken.None);
         }
@@ -1055,7 +1055,7 @@ namespace Supports.GeneratedServices
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<TicketContractMessageContract> UpdateAsync(TicketUpdateRequestContract body, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<TicketContractMessageContract> UpdateAsync(UpdateTicketRequestContract body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/Ticket/Update");
@@ -1571,7 +1571,7 @@ namespace Supports.GeneratedServices
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<Int64MessageContract> AddAsync(TicketAssignCreateRequestContract body)
+        public virtual System.Threading.Tasks.Task<Int64MessageContract> AddAsync(CreateTicketAssignRequestContract body)
         {
             return AddAsync(body, System.Threading.CancellationToken.None);
         }
@@ -1579,7 +1579,7 @@ namespace Supports.GeneratedServices
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<Int64MessageContract> AddAsync(TicketAssignCreateRequestContract body, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<Int64MessageContract> AddAsync(CreateTicketAssignRequestContract body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/TicketAssign/Add");
@@ -1649,7 +1649,7 @@ namespace Supports.GeneratedServices
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<TicketAssignContractMessageContract> UpdateAsync(TicketAssignUpdateRequestContract body)
+        public virtual System.Threading.Tasks.Task<TicketAssignContractMessageContract> UpdateAsync(UpdateTicketAssignRequestContract body)
         {
             return UpdateAsync(body, System.Threading.CancellationToken.None);
         }
@@ -1657,7 +1657,7 @@ namespace Supports.GeneratedServices
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<TicketAssignContractMessageContract> UpdateAsync(TicketAssignUpdateRequestContract body, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<TicketAssignContractMessageContract> UpdateAsync(UpdateTicketAssignRequestContract body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/TicketAssign/Update");
@@ -2329,7 +2329,7 @@ namespace Supports.GeneratedServices
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<Int64MessageContract> AddAsync(TicketDepartmentCreateRequestContract body)
+        public virtual System.Threading.Tasks.Task<Int64MessageContract> AddAsync(CreateTicketDepartmentRequestContract body)
         {
             return AddAsync(body, System.Threading.CancellationToken.None);
         }
@@ -2337,7 +2337,7 @@ namespace Supports.GeneratedServices
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<Int64MessageContract> AddAsync(TicketDepartmentCreateRequestContract body, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<Int64MessageContract> AddAsync(CreateTicketDepartmentRequestContract body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/TicketDepartment/Add");
@@ -2563,7 +2563,7 @@ namespace Supports.GeneratedServices
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<TicketDepartmentContractMessageContract> UpdateAsync(TicketDepartmentUpdateRequestContract body)
+        public virtual System.Threading.Tasks.Task<TicketDepartmentContractMessageContract> UpdateAsync(UpdateTicketDepartmentRequestContract body)
         {
             return UpdateAsync(body, System.Threading.CancellationToken.None);
         }
@@ -2571,7 +2571,7 @@ namespace Supports.GeneratedServices
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<TicketDepartmentContractMessageContract> UpdateAsync(TicketDepartmentUpdateRequestContract body, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<TicketDepartmentContractMessageContract> UpdateAsync(UpdateTicketDepartmentRequestContract body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/TicketDepartment/Update");
@@ -3087,7 +3087,7 @@ namespace Supports.GeneratedServices
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<Int64MessageContract> AddAsync(TicketHistoryCreateRequestContract body)
+        public virtual System.Threading.Tasks.Task<Int64MessageContract> AddAsync(CreateTicketHistoryRequestContract body)
         {
             return AddAsync(body, System.Threading.CancellationToken.None);
         }
@@ -3095,7 +3095,7 @@ namespace Supports.GeneratedServices
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<Int64MessageContract> AddAsync(TicketHistoryCreateRequestContract body, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<Int64MessageContract> AddAsync(CreateTicketHistoryRequestContract body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/TicketHistory/Add");
@@ -3165,7 +3165,7 @@ namespace Supports.GeneratedServices
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<TicketHistoryContractMessageContract> UpdateAsync(TicketHistoryUpdateRequestContract body)
+        public virtual System.Threading.Tasks.Task<TicketHistoryContractMessageContract> UpdateAsync(UpdateTicketHistoryRequestContract body)
         {
             return UpdateAsync(body, System.Threading.CancellationToken.None);
         }
@@ -3173,7 +3173,7 @@ namespace Supports.GeneratedServices
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<TicketHistoryContractMessageContract> UpdateAsync(TicketHistoryUpdateRequestContract body, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<TicketHistoryContractMessageContract> UpdateAsync(UpdateTicketHistoryRequestContract body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/TicketHistory/Update");
@@ -3845,7 +3845,7 @@ namespace Supports.GeneratedServices
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<Int64MessageContract> AddAsync(TicketSupportTimeHistoryCreateRequestContract body)
+        public virtual System.Threading.Tasks.Task<Int64MessageContract> AddAsync(CreateTicketSupportTimeHistoryRequestContract body)
         {
             return AddAsync(body, System.Threading.CancellationToken.None);
         }
@@ -3853,7 +3853,7 @@ namespace Supports.GeneratedServices
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<Int64MessageContract> AddAsync(TicketSupportTimeHistoryCreateRequestContract body, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<Int64MessageContract> AddAsync(CreateTicketSupportTimeHistoryRequestContract body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/TicketSupportTimeHistory/Add");
@@ -4079,7 +4079,7 @@ namespace Supports.GeneratedServices
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<TicketSupportTimeHistoryContractMessageContract> UpdateAsync(TicketSupportTimeHistoryUpdateRequestContract body)
+        public virtual System.Threading.Tasks.Task<TicketSupportTimeHistoryContractMessageContract> UpdateAsync(UpdateTicketSupportTimeHistoryRequestContract body)
         {
             return UpdateAsync(body, System.Threading.CancellationToken.None);
         }
@@ -4087,7 +4087,7 @@ namespace Supports.GeneratedServices
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<TicketSupportTimeHistoryContractMessageContract> UpdateAsync(TicketSupportTimeHistoryUpdateRequestContract body, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<TicketSupportTimeHistoryContractMessageContract> UpdateAsync(UpdateTicketSupportTimeHistoryRequestContract body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/TicketSupportTimeHistory/Update");
@@ -4567,6 +4567,394 @@ namespace Supports.GeneratedServices
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
+    public partial class CreateDepartmentRequestContract : System.ComponentModel.INotifyPropertyChanged
+    {
+        private string _title;
+        private string _uniqueIdentity;
+
+        [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Title
+        {
+            get { return _title; }
+
+            set
+            {
+                if (_title != value)
+                {
+                    _title = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("uniqueIdentity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string UniqueIdentity
+        {
+            get { return _uniqueIdentity; }
+
+            set
+            {
+                if (_uniqueIdentity != value)
+                {
+                    _uniqueIdentity = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void RaisePropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
+        {
+            var handler = PropertyChanged;
+            if (handler != null)
+                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
+    public partial class CreateTicketAssignRequestContract : System.ComponentModel.INotifyPropertyChanged
+    {
+        private long _ticketId;
+        private string _uniqueIdentity;
+
+        [Newtonsoft.Json.JsonProperty("ticketId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long TicketId
+        {
+            get { return _ticketId; }
+
+            set
+            {
+                if (_ticketId != value)
+                {
+                    _ticketId = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("uniqueIdentity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string UniqueIdentity
+        {
+            get { return _uniqueIdentity; }
+
+            set
+            {
+                if (_uniqueIdentity != value)
+                {
+                    _uniqueIdentity = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void RaisePropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
+        {
+            var handler = PropertyChanged;
+            if (handler != null)
+                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
+    public partial class CreateTicketDepartmentRequestContract : System.ComponentModel.INotifyPropertyChanged
+    {
+        private long _departmentId;
+        private long _ticketId;
+        private string _uniqueIdentity;
+
+        [Newtonsoft.Json.JsonProperty("departmentId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long DepartmentId
+        {
+            get { return _departmentId; }
+
+            set
+            {
+                if (_departmentId != value)
+                {
+                    _departmentId = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("ticketId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long TicketId
+        {
+            get { return _ticketId; }
+
+            set
+            {
+                if (_ticketId != value)
+                {
+                    _ticketId = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("uniqueIdentity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string UniqueIdentity
+        {
+            get { return _uniqueIdentity; }
+
+            set
+            {
+                if (_uniqueIdentity != value)
+                {
+                    _uniqueIdentity = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void RaisePropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
+        {
+            var handler = PropertyChanged;
+            if (handler != null)
+                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
+    public partial class CreateTicketHistoryRequestContract : System.ComponentModel.INotifyPropertyChanged
+    {
+        private long _ticketId;
+        private string _content;
+        private string _uniqueIdentity;
+
+        [Newtonsoft.Json.JsonProperty("ticketId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long TicketId
+        {
+            get { return _ticketId; }
+
+            set
+            {
+                if (_ticketId != value)
+                {
+                    _ticketId = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("content", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Content
+        {
+            get { return _content; }
+
+            set
+            {
+                if (_content != value)
+                {
+                    _content = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("uniqueIdentity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string UniqueIdentity
+        {
+            get { return _uniqueIdentity; }
+
+            set
+            {
+                if (_uniqueIdentity != value)
+                {
+                    _uniqueIdentity = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void RaisePropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
+        {
+            var handler = PropertyChanged;
+            if (handler != null)
+                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
+    public partial class CreateTicketRequestContract : System.ComponentModel.INotifyPropertyChanged
+    {
+        private string _title;
+        private TicketStatusType _status;
+        private TicketSensitivityStatusType _sensitivityStatus;
+        private int? _priority;
+        private string _uniqueIdentity;
+
+        [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Title
+        {
+            get { return _title; }
+
+            set
+            {
+                if (_title != value)
+                {
+                    _title = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public TicketStatusType Status
+        {
+            get { return _status; }
+
+            set
+            {
+                if (_status != value)
+                {
+                    _status = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("sensitivityStatus", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public TicketSensitivityStatusType SensitivityStatus
+        {
+            get { return _sensitivityStatus; }
+
+            set
+            {
+                if (_sensitivityStatus != value)
+                {
+                    _sensitivityStatus = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("priority", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int? Priority
+        {
+            get { return _priority; }
+
+            set
+            {
+                if (_priority != value)
+                {
+                    _priority = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("uniqueIdentity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string UniqueIdentity
+        {
+            get { return _uniqueIdentity; }
+
+            set
+            {
+                if (_uniqueIdentity != value)
+                {
+                    _uniqueIdentity = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void RaisePropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
+        {
+            var handler = PropertyChanged;
+            if (handler != null)
+                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
+    public partial class CreateTicketSupportTimeHistoryRequestContract : System.ComponentModel.INotifyPropertyChanged
+    {
+        private long _ticketId;
+        private System.DateTimeOffset _startDateTime;
+        private System.DateTimeOffset _endDateTime;
+        private string _uniqueIdentity;
+
+        [Newtonsoft.Json.JsonProperty("ticketId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long TicketId
+        {
+            get { return _ticketId; }
+
+            set
+            {
+                if (_ticketId != value)
+                {
+                    _ticketId = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("startDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset StartDateTime
+        {
+            get { return _startDateTime; }
+
+            set
+            {
+                if (_startDateTime != value)
+                {
+                    _startDateTime = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("endDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset EndDateTime
+        {
+            get { return _endDateTime; }
+
+            set
+            {
+                if (_endDateTime != value)
+                {
+                    _endDateTime = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("uniqueIdentity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string UniqueIdentity
+        {
+            get { return _uniqueIdentity; }
+
+            set
+            {
+                if (_uniqueIdentity != value)
+                {
+                    _uniqueIdentity = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void RaisePropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
+        {
+            var handler = PropertyChanged;
+            if (handler != null)
+                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
     public partial class DepartmentContract : System.ComponentModel.INotifyPropertyChanged
     {
         private long _id;
@@ -4801,114 +5189,6 @@ namespace Supports.GeneratedServices
                 if (_result != value)
                 {
                     _result = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void RaisePropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
-        {
-            var handler = PropertyChanged;
-            if (handler != null)
-                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-        }
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
-    public partial class DepartmentCreateRequestContract : System.ComponentModel.INotifyPropertyChanged
-    {
-        private string _title;
-        private string _uniqueIdentity;
-
-        [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Title
-        {
-            get { return _title; }
-
-            set
-            {
-                if (_title != value)
-                {
-                    _title = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("uniqueIdentity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string UniqueIdentity
-        {
-            get { return _uniqueIdentity; }
-
-            set
-            {
-                if (_uniqueIdentity != value)
-                {
-                    _uniqueIdentity = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void RaisePropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
-        {
-            var handler = PropertyChanged;
-            if (handler != null)
-                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-        }
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
-    public partial class DepartmentUpdateRequestContract : System.ComponentModel.INotifyPropertyChanged
-    {
-        private long _id;
-        private string _title;
-        private string _uniqueIdentity;
-
-        [Newtonsoft.Json.JsonProperty("id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long Id
-        {
-            get { return _id; }
-
-            set
-            {
-                if (_id != value)
-                {
-                    _id = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Title
-        {
-            get { return _title; }
-
-            set
-            {
-                if (_title != value)
-                {
-                    _title = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("uniqueIdentity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string UniqueIdentity
-        {
-            get { return _uniqueIdentity; }
-
-            set
-            {
-                if (_uniqueIdentity != value)
-                {
-                    _uniqueIdentity = value;
                     RaisePropertyChanged();
                 }
             }
@@ -5319,60 +5599,6 @@ namespace Supports.GeneratedServices
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
-    public enum SensitivityStatusType
-    {
-
-        None = 0,
-
-        Default = 1,
-
-        All = 2,
-
-        Other = 3,
-
-        Unknown = 4,
-
-        Nothing = 5,
-
-        Critical = 6,
-
-        High = 7,
-
-        Normal = 8,
-
-        Low = 9,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
-    public enum StatusType
-    {
-
-        None = 0,
-
-        Default = 1,
-
-        All = 2,
-
-        Other = 3,
-
-        Unknown = 4,
-
-        Nothing = 5,
-
-        New = 6,
-
-        InProgress = 7,
-
-        UserAnswered = 8,
-
-        SupportAnswered = 9,
-
-        Closed = 10,
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
     public partial class TicketAssignContract : System.ComponentModel.INotifyPropertyChanged
     {
         private long _id;
@@ -5623,120 +5849,12 @@ namespace Supports.GeneratedServices
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
-    public partial class TicketAssignCreateRequestContract : System.ComponentModel.INotifyPropertyChanged
-    {
-        private long _ticketId;
-        private string _uniqueIdentity;
-
-        [Newtonsoft.Json.JsonProperty("ticketId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long TicketId
-        {
-            get { return _ticketId; }
-
-            set
-            {
-                if (_ticketId != value)
-                {
-                    _ticketId = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("uniqueIdentity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string UniqueIdentity
-        {
-            get { return _uniqueIdentity; }
-
-            set
-            {
-                if (_uniqueIdentity != value)
-                {
-                    _uniqueIdentity = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void RaisePropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
-        {
-            var handler = PropertyChanged;
-            if (handler != null)
-                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-        }
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
-    public partial class TicketAssignUpdateRequestContract : System.ComponentModel.INotifyPropertyChanged
-    {
-        private long _id;
-        private long _ticketId;
-        private string _uniqueIdentity;
-
-        [Newtonsoft.Json.JsonProperty("id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long Id
-        {
-            get { return _id; }
-
-            set
-            {
-                if (_id != value)
-                {
-                    _id = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("ticketId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long TicketId
-        {
-            get { return _ticketId; }
-
-            set
-            {
-                if (_ticketId != value)
-                {
-                    _ticketId = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("uniqueIdentity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string UniqueIdentity
-        {
-            get { return _uniqueIdentity; }
-
-            set
-            {
-                if (_uniqueIdentity != value)
-                {
-                    _uniqueIdentity = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void RaisePropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
-        {
-            var handler = PropertyChanged;
-            if (handler != null)
-                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-        }
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
     public partial class TicketContract : System.ComponentModel.INotifyPropertyChanged
     {
         private long _id;
         private string _title;
-        private StatusType _status;
-        private SensitivityStatusType _sensitivityStatus;
+        private TicketStatusType _status;
+        private TicketSensitivityStatusType _sensitivityStatus;
         private int? _priority;
         private string _uniqueIdentity;
         private bool _isDeleted;
@@ -5775,7 +5893,7 @@ namespace Supports.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public StatusType Status
+        public TicketStatusType Status
         {
             get { return _status; }
 
@@ -5790,7 +5908,7 @@ namespace Supports.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("sensitivityStatus", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public SensitivityStatusType SensitivityStatus
+        public TicketSensitivityStatusType SensitivityStatus
         {
             get { return _sensitivityStatus; }
 
@@ -6013,100 +6131,6 @@ namespace Supports.GeneratedServices
                 if (_result != value)
                 {
                     _result = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void RaisePropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
-        {
-            var handler = PropertyChanged;
-            if (handler != null)
-                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-        }
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
-    public partial class TicketCreateRequestContract : System.ComponentModel.INotifyPropertyChanged
-    {
-        private string _title;
-        private StatusType _status;
-        private SensitivityStatusType _sensitivityStatus;
-        private int? _priority;
-        private string _uniqueIdentity;
-
-        [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Title
-        {
-            get { return _title; }
-
-            set
-            {
-                if (_title != value)
-                {
-                    _title = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public StatusType Status
-        {
-            get { return _status; }
-
-            set
-            {
-                if (_status != value)
-                {
-                    _status = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("sensitivityStatus", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public SensitivityStatusType SensitivityStatus
-        {
-            get { return _sensitivityStatus; }
-
-            set
-            {
-                if (_sensitivityStatus != value)
-                {
-                    _sensitivityStatus = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("priority", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int? Priority
-        {
-            get { return _priority; }
-
-            set
-            {
-                if (_priority != value)
-                {
-                    _priority = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("uniqueIdentity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string UniqueIdentity
-        {
-            get { return _uniqueIdentity; }
-
-            set
-            {
-                if (_uniqueIdentity != value)
-                {
-                    _uniqueIdentity = value;
                     RaisePropertyChanged();
                 }
             }
@@ -6389,146 +6413,6 @@ namespace Supports.GeneratedServices
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
-    public partial class TicketDepartmentCreateRequestContract : System.ComponentModel.INotifyPropertyChanged
-    {
-        private long _departmentId;
-        private long _ticketId;
-        private string _uniqueIdentity;
-
-        [Newtonsoft.Json.JsonProperty("departmentId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long DepartmentId
-        {
-            get { return _departmentId; }
-
-            set
-            {
-                if (_departmentId != value)
-                {
-                    _departmentId = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("ticketId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long TicketId
-        {
-            get { return _ticketId; }
-
-            set
-            {
-                if (_ticketId != value)
-                {
-                    _ticketId = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("uniqueIdentity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string UniqueIdentity
-        {
-            get { return _uniqueIdentity; }
-
-            set
-            {
-                if (_uniqueIdentity != value)
-                {
-                    _uniqueIdentity = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void RaisePropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
-        {
-            var handler = PropertyChanged;
-            if (handler != null)
-                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-        }
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
-    public partial class TicketDepartmentUpdateRequestContract : System.ComponentModel.INotifyPropertyChanged
-    {
-        private long _id;
-        private long _departmentId;
-        private long _ticketId;
-        private string _uniqueIdentity;
-
-        [Newtonsoft.Json.JsonProperty("id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long Id
-        {
-            get { return _id; }
-
-            set
-            {
-                if (_id != value)
-                {
-                    _id = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("departmentId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long DepartmentId
-        {
-            get { return _departmentId; }
-
-            set
-            {
-                if (_departmentId != value)
-                {
-                    _departmentId = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("ticketId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long TicketId
-        {
-            get { return _ticketId; }
-
-            set
-            {
-                if (_ticketId != value)
-                {
-                    _ticketId = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("uniqueIdentity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string UniqueIdentity
-        {
-            get { return _uniqueIdentity; }
-
-            set
-            {
-                if (_uniqueIdentity != value)
-                {
-                    _uniqueIdentity = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void RaisePropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
-        {
-            var handler = PropertyChanged;
-            if (handler != null)
-                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-        }
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
     public partial class TicketHistoryContract : System.ComponentModel.INotifyPropertyChanged
     {
         private long _id;
@@ -6795,143 +6679,57 @@ namespace Supports.GeneratedServices
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
-    public partial class TicketHistoryCreateRequestContract : System.ComponentModel.INotifyPropertyChanged
+    public enum TicketSensitivityStatusType
     {
-        private long _ticketId;
-        private string _content;
-        private string _uniqueIdentity;
 
-        [Newtonsoft.Json.JsonProperty("ticketId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long TicketId
-        {
-            get { return _ticketId; }
+        None = 0,
 
-            set
-            {
-                if (_ticketId != value)
-                {
-                    _ticketId = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
+        Default = 1,
 
-        [Newtonsoft.Json.JsonProperty("content", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Content
-        {
-            get { return _content; }
+        All = 2,
 
-            set
-            {
-                if (_content != value)
-                {
-                    _content = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
+        Other = 3,
 
-        [Newtonsoft.Json.JsonProperty("uniqueIdentity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string UniqueIdentity
-        {
-            get { return _uniqueIdentity; }
+        Unknown = 4,
 
-            set
-            {
-                if (_uniqueIdentity != value)
-                {
-                    _uniqueIdentity = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
+        Nothing = 5,
 
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        Critical = 6,
 
-        protected virtual void RaisePropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
-        {
-            var handler = PropertyChanged;
-            if (handler != null)
-                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-        }
+        High = 7,
+
+        Normal = 8,
+
+        Low = 9,
+
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
-    public partial class TicketHistoryUpdateRequestContract : System.ComponentModel.INotifyPropertyChanged
+    public enum TicketStatusType
     {
-        private long _id;
-        private long _ticketId;
-        private string _content;
-        private string _uniqueIdentity;
 
-        [Newtonsoft.Json.JsonProperty("id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long Id
-        {
-            get { return _id; }
+        None = 0,
 
-            set
-            {
-                if (_id != value)
-                {
-                    _id = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
+        Default = 1,
 
-        [Newtonsoft.Json.JsonProperty("ticketId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long TicketId
-        {
-            get { return _ticketId; }
+        All = 2,
 
-            set
-            {
-                if (_ticketId != value)
-                {
-                    _ticketId = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
+        Other = 3,
 
-        [Newtonsoft.Json.JsonProperty("content", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string Content
-        {
-            get { return _content; }
+        Unknown = 4,
 
-            set
-            {
-                if (_content != value)
-                {
-                    _content = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
+        Nothing = 5,
 
-        [Newtonsoft.Json.JsonProperty("uniqueIdentity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public string UniqueIdentity
-        {
-            get { return _uniqueIdentity; }
+        New = 6,
 
-            set
-            {
-                if (_uniqueIdentity != value)
-                {
-                    _uniqueIdentity = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
+        InProgress = 7,
 
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        UserAnswered = 8,
 
-        protected virtual void RaisePropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
-        {
-            var handler = PropertyChanged;
-            if (handler != null)
-                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-        }
+        SupportAnswered = 9,
+
+        Closed = 10,
+
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
@@ -7217,53 +7015,37 @@ namespace Supports.GeneratedServices
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
-    public partial class TicketSupportTimeHistoryCreateRequestContract : System.ComponentModel.INotifyPropertyChanged
+    public partial class UpdateDepartmentRequestContract : System.ComponentModel.INotifyPropertyChanged
     {
-        private long _ticketId;
-        private System.DateTimeOffset _startDateTime;
-        private System.DateTimeOffset _endDateTime;
+        private long _id;
+        private string _title;
         private string _uniqueIdentity;
 
-        [Newtonsoft.Json.JsonProperty("ticketId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public long TicketId
+        [Newtonsoft.Json.JsonProperty("id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long Id
         {
-            get { return _ticketId; }
+            get { return _id; }
 
             set
             {
-                if (_ticketId != value)
+                if (_id != value)
                 {
-                    _ticketId = value;
+                    _id = value;
                     RaisePropertyChanged();
                 }
             }
         }
 
-        [Newtonsoft.Json.JsonProperty("startDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset StartDateTime
+        [Newtonsoft.Json.JsonProperty("title", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Title
         {
-            get { return _startDateTime; }
+            get { return _title; }
 
             set
             {
-                if (_startDateTime != value)
+                if (_title != value)
                 {
-                    _startDateTime = value;
-                    RaisePropertyChanged();
-                }
-            }
-        }
-
-        [Newtonsoft.Json.JsonProperty("endDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset EndDateTime
-        {
-            get { return _endDateTime; }
-
-            set
-            {
-                if (_endDateTime != value)
-                {
-                    _endDateTime = value;
+                    _title = value;
                     RaisePropertyChanged();
                 }
             }
@@ -7295,12 +7077,10 @@ namespace Supports.GeneratedServices
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
-    public partial class TicketSupportTimeHistoryUpdateRequestContract : System.ComponentModel.INotifyPropertyChanged
+    public partial class UpdateTicketAssignRequestContract : System.ComponentModel.INotifyPropertyChanged
     {
         private long _id;
         private long _ticketId;
-        private System.DateTimeOffset _startDateTime;
-        private System.DateTimeOffset _endDateTime;
         private string _uniqueIdentity;
 
         [Newtonsoft.Json.JsonProperty("id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
@@ -7333,31 +7113,79 @@ namespace Supports.GeneratedServices
             }
         }
 
-        [Newtonsoft.Json.JsonProperty("startDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset StartDateTime
+        [Newtonsoft.Json.JsonProperty("uniqueIdentity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string UniqueIdentity
         {
-            get { return _startDateTime; }
+            get { return _uniqueIdentity; }
 
             set
             {
-                if (_startDateTime != value)
+                if (_uniqueIdentity != value)
                 {
-                    _startDateTime = value;
+                    _uniqueIdentity = value;
                     RaisePropertyChanged();
                 }
             }
         }
 
-        [Newtonsoft.Json.JsonProperty("endDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.DateTimeOffset EndDateTime
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void RaisePropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
         {
-            get { return _endDateTime; }
+            var handler = PropertyChanged;
+            if (handler != null)
+                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
+    public partial class UpdateTicketDepartmentRequestContract : System.ComponentModel.INotifyPropertyChanged
+    {
+        private long _id;
+        private long _departmentId;
+        private long _ticketId;
+        private string _uniqueIdentity;
+
+        [Newtonsoft.Json.JsonProperty("id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long Id
+        {
+            get { return _id; }
 
             set
             {
-                if (_endDateTime != value)
+                if (_id != value)
                 {
-                    _endDateTime = value;
+                    _id = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("departmentId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long DepartmentId
+        {
+            get { return _departmentId; }
+
+            set
+            {
+                if (_departmentId != value)
+                {
+                    _departmentId = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("ticketId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long TicketId
+        {
+            get { return _ticketId; }
+
+            set
+            {
+                if (_ticketId != value)
+                {
+                    _ticketId = value;
                     RaisePropertyChanged();
                 }
             }
@@ -7389,12 +7217,90 @@ namespace Supports.GeneratedServices
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
-    public partial class TicketUpdateRequestContract : System.ComponentModel.INotifyPropertyChanged
+    public partial class UpdateTicketHistoryRequestContract : System.ComponentModel.INotifyPropertyChanged
+    {
+        private long _id;
+        private long _ticketId;
+        private string _content;
+        private string _uniqueIdentity;
+
+        [Newtonsoft.Json.JsonProperty("id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long Id
+        {
+            get { return _id; }
+
+            set
+            {
+                if (_id != value)
+                {
+                    _id = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("ticketId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long TicketId
+        {
+            get { return _ticketId; }
+
+            set
+            {
+                if (_ticketId != value)
+                {
+                    _ticketId = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("content", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string Content
+        {
+            get { return _content; }
+
+            set
+            {
+                if (_content != value)
+                {
+                    _content = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("uniqueIdentity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string UniqueIdentity
+        {
+            get { return _uniqueIdentity; }
+
+            set
+            {
+                if (_uniqueIdentity != value)
+                {
+                    _uniqueIdentity = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void RaisePropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
+        {
+            var handler = PropertyChanged;
+            if (handler != null)
+                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
+    public partial class UpdateTicketRequestContract : System.ComponentModel.INotifyPropertyChanged
     {
         private long _id;
         private string _title;
-        private StatusType _status;
-        private SensitivityStatusType _sensitivityStatus;
+        private TicketStatusType _status;
+        private TicketSensitivityStatusType _sensitivityStatus;
         private int? _priority;
         private string _uniqueIdentity;
 
@@ -7429,7 +7335,7 @@ namespace Supports.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("status", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public StatusType Status
+        public TicketStatusType Status
         {
             get { return _status; }
 
@@ -7444,7 +7350,7 @@ namespace Supports.GeneratedServices
         }
 
         [Newtonsoft.Json.JsonProperty("sensitivityStatus", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public SensitivityStatusType SensitivityStatus
+        public TicketSensitivityStatusType SensitivityStatus
         {
             get { return _sensitivityStatus; }
 
@@ -7468,6 +7374,100 @@ namespace Supports.GeneratedServices
                 if (_priority != value)
                 {
                     _priority = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("uniqueIdentity", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public string UniqueIdentity
+        {
+            get { return _uniqueIdentity; }
+
+            set
+            {
+                if (_uniqueIdentity != value)
+                {
+                    _uniqueIdentity = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void RaisePropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
+        {
+            var handler = PropertyChanged;
+            if (handler != null)
+                handler(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+        }
+    }
+
+    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.19.0.0 (NJsonSchema v10.9.0.0 (Newtonsoft.Json v13.0.3.0))")]
+    public partial class UpdateTicketSupportTimeHistoryRequestContract : System.ComponentModel.INotifyPropertyChanged
+    {
+        private long _id;
+        private long _ticketId;
+        private System.DateTimeOffset _startDateTime;
+        private System.DateTimeOffset _endDateTime;
+        private string _uniqueIdentity;
+
+        [Newtonsoft.Json.JsonProperty("id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long Id
+        {
+            get { return _id; }
+
+            set
+            {
+                if (_id != value)
+                {
+                    _id = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("ticketId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public long TicketId
+        {
+            get { return _ticketId; }
+
+            set
+            {
+                if (_ticketId != value)
+                {
+                    _ticketId = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("startDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset StartDateTime
+        {
+            get { return _startDateTime; }
+
+            set
+            {
+                if (_startDateTime != value)
+                {
+                    _startDateTime = value;
+                    RaisePropertyChanged();
+                }
+            }
+        }
+
+        [Newtonsoft.Json.JsonProperty("endDateTime", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public System.DateTimeOffset EndDateTime
+        {
+            get { return _endDateTime; }
+
+            set
+            {
+                if (_endDateTime != value)
+                {
+                    _endDateTime = value;
                     RaisePropertyChanged();
                 }
             }

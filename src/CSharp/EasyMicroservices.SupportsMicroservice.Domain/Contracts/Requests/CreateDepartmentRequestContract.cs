@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace EasyMicroservices.SupportsMicroservice.Contracts.Requests
 {
-    public class TicketSupportTimeHistoryCreateRequestContract
+    public class CreateDepartmentRequestContract
     {
-        public long TicketId { get; set; }
-        public DateTime StartDateTime { get; set; }
-        public DateTime EndDateTime { get; set; }
+        public string Title { get; set; }
         public string UniqueIdentity { get; set; }
     }
 }

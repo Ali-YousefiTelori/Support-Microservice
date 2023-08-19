@@ -6,9 +6,9 @@ using EasyMicroservices.SupportsMicroservice.Database.Entities;
 
 namespace EasyMicroservices.SupportsMicroservice.WebApi.Controllers
 {
-    public class DepartmentController : SimpleQueryServiceController<DepartmentEntity, DepartmentCreateRequestContract, DepartmentUpdateRequestContract, DepartmentContract, long>
+    public class DepartmentController : SimpleQueryServiceController<DepartmentEntity, CreateDepartmentRequestContract, UpdateDepartmentRequestContract, DepartmentContract, long>
     {
-        public DepartmentController(IContractLogic<DepartmentEntity, DepartmentCreateRequestContract, DepartmentUpdateRequestContract, DepartmentContract, long> contractLogic) : base(contractLogic)
+        public DepartmentController(IContractLogic<DepartmentEntity, CreateDepartmentRequestContract, UpdateDepartmentRequestContract, DepartmentContract, long> contractLogic) : base(contractLogic)
         {
 
         }

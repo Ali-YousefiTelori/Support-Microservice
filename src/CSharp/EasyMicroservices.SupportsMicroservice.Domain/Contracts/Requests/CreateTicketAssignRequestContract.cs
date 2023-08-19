@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EasyMicroservices.SupportsMicroservice.Contracts.Requests
 {
-    public class TicketAssignCreateRequestContract
+    public class CreateTicketAssignRequestContract
     {
         public long TicketId { get; set; }
         public string UniqueIdentity { get; set; }

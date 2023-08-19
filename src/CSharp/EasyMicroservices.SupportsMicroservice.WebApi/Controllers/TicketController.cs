@@ -6,9 +6,9 @@ using EasyMicroservices.SupportsMicroservice.Database.Entities;
 
 namespace EasyMicroservices.SupportsMicroservice.WebApi.Controllers
 {
-    public class TicketController : SimpleQueryServiceController<TicketEntity, TicketCreateRequestContract, TicketUpdateRequestContract, TicketContract, long>
+    public class TicketController : SimpleQueryServiceController<TicketEntity, CreateTicketRequestContract, UpdateTicketRequestContract, TicketContract, long>
     {
-        public TicketController(IContractLogic<TicketEntity, TicketCreateRequestContract, TicketUpdateRequestContract, TicketContract, long> contractLogic) : base(contractLogic)
+        public TicketController(IContractLogic<TicketEntity, CreateTicketRequestContract, UpdateTicketRequestContract, TicketContract, long> contractLogic) : base(contractLogic)
         {
 
         }

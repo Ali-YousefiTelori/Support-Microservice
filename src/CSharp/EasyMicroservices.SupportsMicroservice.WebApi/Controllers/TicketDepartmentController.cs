@@ -8,19 +8,19 @@ using EasyMicroservices.SupportsMicroservice.Database.Entities;
 
 namespace EasyMicroservices.SupportsMicroservice.WebApi.Controllers
 {
-    public class TicketDepartmentController : SimpleQueryServiceController<TicketDepartmentEntity, TicketDepartmentCreateRequestContract, TicketDepartmentUpdateRequestContract, TicketDepartmentContract, long>
+    public class TicketDepartmentController : SimpleQueryServiceController<TicketDepartmentEntity, CreateTicketDepartmentRequestContract, UpdateTicketDepartmentRequestContract, TicketDepartmentContract, long>
     {
-        private readonly IContractLogic<TicketEntity, TicketCreateRequestContract, TicketUpdateRequestContract, TicketContract, long> _ticketlogic;
-        private readonly IContractLogic<DepartmentEntity, DepartmentCreateRequestContract, DepartmentUpdateRequestContract, DepartmentContract, long> _departmentlogic;
-        private readonly IContractLogic<TicketDepartmentEntity, TicketDepartmentCreateRequestContract, TicketDepartmentUpdateRequestContract, TicketDepartmentContract, long> _contractlogic;
+        private readonly IContractLogic<TicketEntity, CreateTicketRequestContract, UpdateTicketRequestContract, TicketContract, long> _ticketlogic;
+        private readonly IContractLogic<DepartmentEntity, CreateDepartmentRequestContract, UpdateDepartmentRequestContract, DepartmentContract, long> _departmentlogic;
+        private readonly IContractLogic<TicketDepartmentEntity, CreateTicketDepartmentRequestContract, UpdateTicketDepartmentRequestContract, TicketDepartmentContract, long> _contractlogic;
 
-        public TicketDepartmentController(IContractLogic<DepartmentEntity, DepartmentCreateRequestContract, DepartmentUpdateRequestContract, DepartmentContract, long> departmentlogic,IContractLogic<TicketEntity, TicketCreateRequestContract, TicketUpdateRequestContract, TicketContract, long> ticketlogic,IContractLogic<TicketDepartmentEntity, TicketDepartmentCreateRequestContract, TicketDepartmentUpdateRequestContract, TicketDepartmentContract, long> contractLogic) : base(contractLogic)
+        public TicketDepartmentController(IContractLogic<DepartmentEntity, CreateDepartmentRequestContract, UpdateDepartmentRequestContract, DepartmentContract, long> departmentlogic,IContractLogic<TicketEntity, CreateTicketRequestContract, UpdateTicketRequestContract, TicketContract, long> ticketlogic,IContractLogic<TicketDepartmentEntity, CreateTicketDepartmentRequestContract, UpdateTicketDepartmentRequestContract, TicketDepartmentContract, long> contractLogic) : base(contractLogic)
         {
             _ticketlogic = ticketlogic;
             _departmentlogic = departmentlogic;
             _contractlogic = contractLogic;
         }
-        public override async Task<MessageContract<long>> Add(TicketDepartmentCreateRequestContract request, CancellationToken cancellationToken = default)
+        public override async Task<MessageContract<long>> Add(CreateTicketDepartmentRequestContract request, CancellationToken cancellationToken = default)
         {
             var checkTicketId = await _ticketlogic.GetById(new GetIdRequestContract<long>() { Id = request.TicketId });
             var checkDepartmentID = await _departmentlogic.GetById(new GetIdRequestContract<long>() { Id = request.DepartmentId });

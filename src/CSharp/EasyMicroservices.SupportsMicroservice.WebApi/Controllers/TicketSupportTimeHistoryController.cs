@@ -8,16 +8,16 @@ using EasyMicroservices.SupportsMicroservice.Database.Entities;
 
 namespace EasyMicroservices.SupportsMicroservice.WebApi.Controllers
 {
-    public class TicketSupportTimeHistoryController : SimpleQueryServiceController<TicketSupportTimeHistoryEntity, TicketSupportTimeHistoryCreateRequestContract, TicketSupportTimeHistoryUpdateRequestContract, TicketSupportTimeHistoryContract, long>
+    public class TicketSupportTimeHistoryController : SimpleQueryServiceController<TicketSupportTimeHistoryEntity, CreateTicketSupportTimeHistoryRequestContract, UpdateTicketSupportTimeHistoryRequestContract, TicketSupportTimeHistoryContract, long>
     {
-        private readonly IContractLogic<TicketSupportTimeHistoryEntity, TicketSupportTimeHistoryCreateRequestContract, TicketSupportTimeHistoryUpdateRequestContract, TicketSupportTimeHistoryContract, long> _contractlogic;
-        private readonly IContractLogic<TicketEntity, TicketCreateRequestContract, TicketUpdateRequestContract, TicketContract, long> _ticketlogic;
-        public TicketSupportTimeHistoryController(IContractLogic<TicketEntity, TicketCreateRequestContract, TicketUpdateRequestContract, TicketContract, long> ticketlogic , IContractLogic<TicketSupportTimeHistoryEntity, TicketSupportTimeHistoryCreateRequestContract, TicketSupportTimeHistoryUpdateRequestContract, TicketSupportTimeHistoryContract, long> contractLogic) : base(contractLogic)
+        private readonly IContractLogic<TicketSupportTimeHistoryEntity, CreateTicketSupportTimeHistoryRequestContract, UpdateTicketSupportTimeHistoryRequestContract, TicketSupportTimeHistoryContract, long> _contractlogic;
+        private readonly IContractLogic<TicketEntity, CreateTicketRequestContract, UpdateTicketRequestContract, TicketContract, long> _ticketlogic;
+        public TicketSupportTimeHistoryController(IContractLogic<TicketEntity, CreateTicketRequestContract, UpdateTicketRequestContract, TicketContract, long> ticketlogic , IContractLogic<TicketSupportTimeHistoryEntity, CreateTicketSupportTimeHistoryRequestContract, UpdateTicketSupportTimeHistoryRequestContract, TicketSupportTimeHistoryContract, long> contractLogic) : base(contractLogic)
         {
             _ticketlogic = ticketlogic;
             _contractlogic = contractLogic;
         }
-        public override async Task<MessageContract<long>> Add(TicketSupportTimeHistoryCreateRequestContract request, CancellationToken cancellationToken = default)
+        public override async Task<MessageContract<long>> Add(CreateTicketSupportTimeHistoryRequestContract request, CancellationToken cancellationToken = default)
         {
             var checkTicketId = await _ticketlogic.GetById(new GetIdRequestContract<long>() { Id = request.TicketId });
             if (checkTicketId.IsSuccess)

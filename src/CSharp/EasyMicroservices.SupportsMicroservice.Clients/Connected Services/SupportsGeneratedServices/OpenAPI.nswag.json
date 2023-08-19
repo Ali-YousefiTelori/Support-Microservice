@@ -113,17 +113,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/DepartmentCreateRequestContract"
+                "$ref": "#/components/schemas/CreateDepartmentRequestContract"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/DepartmentCreateRequestContract"
+                "$ref": "#/components/schemas/CreateDepartmentRequestContract"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/DepartmentCreateRequestContract"
+                "$ref": "#/components/schemas/CreateDepartmentRequestContract"
               }
             }
           }
@@ -162,17 +162,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/DepartmentUpdateRequestContract"
+                "$ref": "#/components/schemas/UpdateDepartmentRequestContract"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/DepartmentUpdateRequestContract"
+                "$ref": "#/components/schemas/UpdateDepartmentRequestContract"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/DepartmentUpdateRequestContract"
+                "$ref": "#/components/schemas/UpdateDepartmentRequestContract"
               }
             }
           }
@@ -486,17 +486,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketCreateRequestContract"
+                "$ref": "#/components/schemas/CreateTicketRequestContract"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketCreateRequestContract"
+                "$ref": "#/components/schemas/CreateTicketRequestContract"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketCreateRequestContract"
+                "$ref": "#/components/schemas/CreateTicketRequestContract"
               }
             }
           }
@@ -535,17 +535,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketUpdateRequestContract"
+                "$ref": "#/components/schemas/UpdateTicketRequestContract"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketUpdateRequestContract"
+                "$ref": "#/components/schemas/UpdateTicketRequestContract"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketUpdateRequestContract"
+                "$ref": "#/components/schemas/UpdateTicketRequestContract"
               }
             }
           }
@@ -761,17 +761,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketAssignCreateRequestContract"
+                "$ref": "#/components/schemas/CreateTicketAssignRequestContract"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketAssignCreateRequestContract"
+                "$ref": "#/components/schemas/CreateTicketAssignRequestContract"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketAssignCreateRequestContract"
+                "$ref": "#/components/schemas/CreateTicketAssignRequestContract"
               }
             }
           }
@@ -810,17 +810,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketAssignUpdateRequestContract"
+                "$ref": "#/components/schemas/UpdateTicketAssignRequestContract"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketAssignUpdateRequestContract"
+                "$ref": "#/components/schemas/UpdateTicketAssignRequestContract"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketAssignUpdateRequestContract"
+                "$ref": "#/components/schemas/UpdateTicketAssignRequestContract"
               }
             }
           }
@@ -1134,17 +1134,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketDepartmentCreateRequestContract"
+                "$ref": "#/components/schemas/CreateTicketDepartmentRequestContract"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketDepartmentCreateRequestContract"
+                "$ref": "#/components/schemas/CreateTicketDepartmentRequestContract"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketDepartmentCreateRequestContract"
+                "$ref": "#/components/schemas/CreateTicketDepartmentRequestContract"
               }
             }
           }
@@ -1281,17 +1281,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketDepartmentUpdateRequestContract"
+                "$ref": "#/components/schemas/UpdateTicketDepartmentRequestContract"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketDepartmentUpdateRequestContract"
+                "$ref": "#/components/schemas/UpdateTicketDepartmentRequestContract"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketDepartmentUpdateRequestContract"
+                "$ref": "#/components/schemas/UpdateTicketDepartmentRequestContract"
               }
             }
           }
@@ -1507,17 +1507,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketHistoryCreateRequestContract"
+                "$ref": "#/components/schemas/CreateTicketHistoryRequestContract"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketHistoryCreateRequestContract"
+                "$ref": "#/components/schemas/CreateTicketHistoryRequestContract"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketHistoryCreateRequestContract"
+                "$ref": "#/components/schemas/CreateTicketHistoryRequestContract"
               }
             }
           }
@@ -1556,17 +1556,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketHistoryUpdateRequestContract"
+                "$ref": "#/components/schemas/UpdateTicketHistoryRequestContract"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketHistoryUpdateRequestContract"
+                "$ref": "#/components/schemas/UpdateTicketHistoryRequestContract"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketHistoryUpdateRequestContract"
+                "$ref": "#/components/schemas/UpdateTicketHistoryRequestContract"
               }
             }
           }
@@ -1880,17 +1880,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketSupportTimeHistoryCreateRequestContract"
+                "$ref": "#/components/schemas/CreateTicketSupportTimeHistoryRequestContract"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketSupportTimeHistoryCreateRequestContract"
+                "$ref": "#/components/schemas/CreateTicketSupportTimeHistoryRequestContract"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketSupportTimeHistoryCreateRequestContract"
+                "$ref": "#/components/schemas/CreateTicketSupportTimeHistoryRequestContract"
               }
             }
           }
@@ -2027,17 +2027,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketSupportTimeHistoryUpdateRequestContract"
+                "$ref": "#/components/schemas/UpdateTicketSupportTimeHistoryRequestContract"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketSupportTimeHistoryUpdateRequestContract"
+                "$ref": "#/components/schemas/UpdateTicketSupportTimeHistoryRequestContract"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/TicketSupportTimeHistoryUpdateRequestContract"
+                "$ref": "#/components/schemas/UpdateTicketSupportTimeHistoryRequestContract"
               }
             }
           }
@@ -2246,6 +2246,118 @@
   },
   "components": {
     "schemas": {
+      "CreateDepartmentRequestContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "uniqueIdentity": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "CreateTicketAssignRequestContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "ticketId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "uniqueIdentity": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "CreateTicketDepartmentRequestContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "departmentId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "ticketId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "uniqueIdentity": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "CreateTicketHistoryRequestContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "ticketId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "content": {
+            "type": "string",
+            "nullable": true
+          },
+          "uniqueIdentity": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "CreateTicketRequestContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "$ref": "#/components/schemas/TicketStatusType"
+          },
+          "sensitivityStatus": {
+            "$ref": "#/components/schemas/TicketSensitivityStatusType"
+          },
+          "priority": {
+            "title": "Nullable<Int32>",
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "uniqueIdentity": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "CreateTicketSupportTimeHistoryRequestContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "ticketId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "startDateTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endDateTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "uniqueIdentity": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
       "DepartmentContract": {
         "type": "object",
         "additionalProperties": false,
@@ -2317,38 +2429,6 @@
           },
           "result": {
             "$ref": "#/components/schemas/DepartmentContract"
-          }
-        }
-      },
-      "DepartmentCreateRequestContract": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "title": {
-            "type": "string",
-            "nullable": true
-          },
-          "uniqueIdentity": {
-            "type": "string",
-            "nullable": true
-          }
-        }
-      },
-      "DepartmentUpdateRequestContract": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "title": {
-            "type": "string",
-            "nullable": true
-          },
-          "uniqueIdentity": {
-            "type": "string",
-            "nullable": true
           }
         }
       },
@@ -2502,64 +2582,6 @@
           }
         }
       },
-      "SensitivityStatusType": {
-        "type": "integer",
-        "format": "int32",
-        "x-enumNames": [
-          "None",
-          "Default",
-          "All",
-          "Other",
-          "Unknown",
-          "Nothing",
-          "Critical",
-          "High",
-          "Normal",
-          "Low"
-        ],
-        "enum": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9
-        ]
-      },
-      "StatusType": {
-        "type": "integer",
-        "format": "int32",
-        "x-enumNames": [
-          "None",
-          "Default",
-          "All",
-          "Other",
-          "Unknown",
-          "Nothing",
-          "New",
-          "InProgress",
-          "UserAnswered",
-          "SupportAnswered",
-          "Closed"
-        ],
-        "enum": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10
-        ]
-      },
       "TicketAssignContract": {
         "type": "object",
         "additionalProperties": false,
@@ -2634,38 +2656,6 @@
           }
         }
       },
-      "TicketAssignCreateRequestContract": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "ticketId": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "uniqueIdentity": {
-            "type": "string",
-            "nullable": true
-          }
-        }
-      },
-      "TicketAssignUpdateRequestContract": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "ticketId": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "uniqueIdentity": {
-            "type": "string",
-            "nullable": true
-          }
-        }
-      },
       "TicketContract": {
         "type": "object",
         "additionalProperties": false,
@@ -2679,10 +2669,10 @@
             "nullable": true
           },
           "status": {
-            "$ref": "#/components/schemas/StatusType"
+            "$ref": "#/components/schemas/TicketStatusType"
           },
           "sensitivityStatus": {
-            "$ref": "#/components/schemas/SensitivityStatusType"
+            "$ref": "#/components/schemas/TicketSensitivityStatusType"
           },
           "priority": {
             "title": "Nullable<Int32>",
@@ -2749,32 +2739,6 @@
           },
           "result": {
             "$ref": "#/components/schemas/TicketContract"
-          }
-        }
-      },
-      "TicketCreateRequestContract": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "title": {
-            "type": "string",
-            "nullable": true
-          },
-          "status": {
-            "$ref": "#/components/schemas/StatusType"
-          },
-          "sensitivityStatus": {
-            "$ref": "#/components/schemas/SensitivityStatusType"
-          },
-          "priority": {
-            "title": "Nullable<Int32>",
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "uniqueIdentity": {
-            "type": "string",
-            "nullable": true
           }
         }
       },
@@ -2856,46 +2820,6 @@
           }
         }
       },
-      "TicketDepartmentCreateRequestContract": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "departmentId": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "ticketId": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "uniqueIdentity": {
-            "type": "string",
-            "nullable": true
-          }
-        }
-      },
-      "TicketDepartmentUpdateRequestContract": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "departmentId": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "ticketId": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "uniqueIdentity": {
-            "type": "string",
-            "nullable": true
-          }
-        }
-      },
       "TicketHistoryContract": {
         "type": "object",
         "additionalProperties": false,
@@ -2974,45 +2898,63 @@
           }
         }
       },
-      "TicketHistoryCreateRequestContract": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "ticketId": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "content": {
-            "type": "string",
-            "nullable": true
-          },
-          "uniqueIdentity": {
-            "type": "string",
-            "nullable": true
-          }
-        }
+      "TicketSensitivityStatusType": {
+        "type": "integer",
+        "format": "int32",
+        "x-enumNames": [
+          "None",
+          "Default",
+          "All",
+          "Other",
+          "Unknown",
+          "Nothing",
+          "Critical",
+          "High",
+          "Normal",
+          "Low"
+        ],
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
       },
-      "TicketHistoryUpdateRequestContract": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "ticketId": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "content": {
-            "type": "string",
-            "nullable": true
-          },
-          "uniqueIdentity": {
-            "type": "string",
-            "nullable": true
-          }
-        }
+      "TicketStatusType": {
+        "type": "integer",
+        "format": "int32",
+        "x-enumNames": [
+          "None",
+          "Default",
+          "All",
+          "Other",
+          "Unknown",
+          "Nothing",
+          "New",
+          "InProgress",
+          "UserAnswered",
+          "SupportAnswered",
+          "Closed"
+        ],
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
       },
       "TicketSupportTimeHistoryContract": {
         "type": "object",
@@ -3096,21 +3038,17 @@
           }
         }
       },
-      "TicketSupportTimeHistoryCreateRequestContract": {
+      "UpdateDepartmentRequestContract": {
         "type": "object",
         "additionalProperties": false,
         "properties": {
-          "ticketId": {
+          "id": {
             "type": "integer",
             "format": "int64"
           },
-          "startDateTime": {
+          "title": {
             "type": "string",
-            "format": "date-time"
-          },
-          "endDateTime": {
-            "type": "string",
-            "format": "date-time"
+            "nullable": true
           },
           "uniqueIdentity": {
             "type": "string",
@@ -3118,7 +3056,7 @@
           }
         }
       },
-      "TicketSupportTimeHistoryUpdateRequestContract": {
+      "UpdateTicketAssignRequestContract": {
         "type": "object",
         "additionalProperties": false,
         "properties": {
@@ -3130,13 +3068,27 @@
             "type": "integer",
             "format": "int64"
           },
-          "startDateTime": {
+          "uniqueIdentity": {
             "type": "string",
-            "format": "date-time"
+            "nullable": true
+          }
+        }
+      },
+      "UpdateTicketDepartmentRequestContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
           },
-          "endDateTime": {
-            "type": "string",
-            "format": "date-time"
+          "departmentId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "ticketId": {
+            "type": "integer",
+            "format": "int64"
           },
           "uniqueIdentity": {
             "type": "string",
@@ -3144,7 +3096,29 @@
           }
         }
       },
-      "TicketUpdateRequestContract": {
+      "UpdateTicketHistoryRequestContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "ticketId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "content": {
+            "type": "string",
+            "nullable": true
+          },
+          "uniqueIdentity": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "UpdateTicketRequestContract": {
         "type": "object",
         "additionalProperties": false,
         "properties": {
@@ -3157,16 +3131,42 @@
             "nullable": true
           },
           "status": {
-            "$ref": "#/components/schemas/StatusType"
+            "$ref": "#/components/schemas/TicketStatusType"
           },
           "sensitivityStatus": {
-            "$ref": "#/components/schemas/SensitivityStatusType"
+            "$ref": "#/components/schemas/TicketSensitivityStatusType"
           },
           "priority": {
             "title": "Nullable<Int32>",
             "type": "integer",
             "format": "int32",
             "nullable": true
+          },
+          "uniqueIdentity": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "UpdateTicketSupportTimeHistoryRequestContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "ticketId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "startDateTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endDateTime": {
+            "type": "string",
+            "format": "date-time"
           },
           "uniqueIdentity": {
             "type": "string",

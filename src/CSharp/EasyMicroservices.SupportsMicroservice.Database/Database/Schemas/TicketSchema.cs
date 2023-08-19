@@ -11,8 +11,8 @@ namespace EasyMicroservices.SupportsMicroservice.Database.Schemas
     public class TicketSchema : IUniqueIdentitySchema, ISoftDeleteSchema, IDateTimeSchema
     {
         public string Title { get; set; }
-        public StatusType Status { get; set; }
-        public SensitivityStatusType sensitivityStatus { get; set; }
+        public TicketStatusType Status { get; set; }
+        public TicketSensitivityStatusType sensitivityStatus { get; set; }
         public int? Priority { get; set; }
         public string UniqueIdentity { get; set; }
         public bool IsDeleted { get; set; }

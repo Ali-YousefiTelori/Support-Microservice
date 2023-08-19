@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EasyMicroservices.SupportsMicroservice.DataTypes
 {
-    public enum SensitivityStatusType
+    public enum TicketSensitivityStatusType
     {
         /// <summary>
         /// value is none, Never use the None to return values

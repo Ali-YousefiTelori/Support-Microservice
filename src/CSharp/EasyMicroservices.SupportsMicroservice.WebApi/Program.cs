@@ -47,12 +47,12 @@ namespace EasyMicroservices.SupportsMicroservice.WebApi
             string webRootPath = @Directory.GetCurrentDirectory();
 
             builder.Services.AddHttpContextAccessor();
-            builder.Services.AddScoped((serviceProvider) => new DependencyManager().GetContractLogic<TicketEntity, TicketCreateRequestContract, TicketUpdateRequestContract, TicketContract>());
-            builder.Services.AddScoped((serviceProvider) => new DependencyManager().GetContractLogic<TicketHistoryEntity, TicketHistoryCreateRequestContract, TicketHistoryUpdateRequestContract, TicketHistoryContract>());
-            builder.Services.AddScoped((serviceProvider) => new DependencyManager().GetContractLogic<DepartmentEntity, DepartmentCreateRequestContract, DepartmentUpdateRequestContract, DepartmentContract>());
-            builder.Services.AddScoped((serviceProvider) => new DependencyManager().GetContractLogic<TicketDepartmentEntity, TicketDepartmentCreateRequestContract, TicketDepartmentUpdateRequestContract, TicketDepartmentContract>());
-            builder.Services.AddScoped((serviceProvider) => new DependencyManager().GetContractLogic<TicketSupportTimeHistoryEntity, TicketSupportTimeHistoryCreateRequestContract, TicketSupportTimeHistoryUpdateRequestContract, TicketSupportTimeHistoryContract>());
-            builder.Services.AddScoped((serviceProvider) => new DependencyManager().GetContractLogic<TicketAssignEntity, TicketAssignCreateRequestContract, TicketAssignUpdateRequestContract, TicketAssignContract>());
+            builder.Services.AddScoped((serviceProvider) => new DependencyManager().GetContractLogic<TicketEntity, CreateTicketRequestContract, UpdateTicketRequestContract, TicketContract>());
+            builder.Services.AddScoped((serviceProvider) => new DependencyManager().GetContractLogic<TicketHistoryEntity, CreateTicketHistoryRequestContract, UpdateTicketHistoryRequestContract, TicketHistoryContract>());
+            builder.Services.AddScoped((serviceProvider) => new DependencyManager().GetContractLogic<DepartmentEntity, CreateDepartmentRequestContract, UpdateDepartmentRequestContract, DepartmentContract>());
+            builder.Services.AddScoped((serviceProvider) => new DependencyManager().GetContractLogic<TicketDepartmentEntity, CreateTicketDepartmentRequestContract, UpdateTicketDepartmentRequestContract, TicketDepartmentContract>());
+            builder.Services.AddScoped((serviceProvider) => new DependencyManager().GetContractLogic<TicketSupportTimeHistoryEntity, CreateTicketSupportTimeHistoryRequestContract, UpdateTicketSupportTimeHistoryRequestContract, TicketSupportTimeHistoryContract>());
+            builder.Services.AddScoped((serviceProvider) => new DependencyManager().GetContractLogic<TicketAssignEntity, CreateTicketAssignRequestContract, UpdateTicketAssignRequestContract, TicketAssignContract>());
             builder.Services.AddScoped<IDatabaseBuilder>(serviceProvider => new DatabaseBuilder());
    
             builder.Services.AddScoped<IDependencyManager>(service => new DependencyManager());
