@@ -12,7 +12,7 @@ namespace EasyMicroservices.SupportsMicroservice.Database.Schemas
     {
         public string Title { get; set; }
         public TicketStatusType Status { get; set; }
-        public TicketSensitivityStatusType sensitivityStatus { get; set; }
+        public TicketSensitivityStatusType SensitivityStatus { get; set; }
         public int? Priority { get; set; }
         public string UniqueIdentity { get; set; }
         public bool IsDeleted { get; set; }
