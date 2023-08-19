@@ -10,6 +10,7 @@ namespace EasyMicroservices.SupportsMicroservice.Database.Entities
 {
     public class TicketSupportTimeHistoryEntity : TicketSupportTimeHistorySchema , IIdSchema<long>
     {
+        public long TicketId { get; set; }
         public long Id { get; set; }
     }
 }

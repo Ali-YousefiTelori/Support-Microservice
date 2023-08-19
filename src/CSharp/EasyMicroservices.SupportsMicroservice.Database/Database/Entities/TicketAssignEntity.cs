@@ -11,6 +11,6 @@ namespace EasyMicroservices.SupportsMicroservice.Database.Entities
     public class TicketAssignEntity : TicketAssignSchema, IIdSchema<long>
     {
         public long Id { get; set; }
-
+        public long TicketId { get; set; }
     }
 }

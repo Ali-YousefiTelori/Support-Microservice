@@ -44,7 +44,6 @@ namespace EasyMicroservices.SupportsMicroservice.WebApi
                 options.UseSqlServer(builder.Configuration.GetConnectionString(config.GetConnectionString("local")))
             );
 
-            //builder.Services.AddScoped((serviceProvider) => new DependencyManager().GetContractLogic<FormEntity, CreateFormRequestContract, FormContract, FormContract>());
             string webRootPath = @Directory.GetCurrentDirectory();
 
             builder.Services.AddHttpContextAccessor();

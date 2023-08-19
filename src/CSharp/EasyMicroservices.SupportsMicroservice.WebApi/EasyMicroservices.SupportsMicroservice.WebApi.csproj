@@ -13,9 +13,7 @@
     </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\EasyMicroservices.SupportsMicroservice.StartUp\EasyMicroservices.SupportsMicroservice.StartUp.csproj" />
-  </ItemGroup>
-
+	<ItemGroup>
+		<ProjectReference Include="..\EasyMicroservices.SupportsMicroservice.StartUp\EasyMicroservices.SupportsMicroservice.StartUp.csproj" />
+	</ItemGroup>
 </Project>

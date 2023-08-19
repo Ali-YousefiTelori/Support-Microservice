@@ -9,7 +9,6 @@ namespace EasyMicroservices.SupportsMicroservice.Database.Schemas
 {
     public class TicketAssignSchema : IUniqueIdentitySchema, ISoftDeleteSchema, IDateTimeSchema
     {
-        public long TicketId { get; set; }
         public string UniqueIdentity { get; set; }
         public bool IsDeleted { get; set; }
         public DateTime? DeletedDateTime { get; set; }

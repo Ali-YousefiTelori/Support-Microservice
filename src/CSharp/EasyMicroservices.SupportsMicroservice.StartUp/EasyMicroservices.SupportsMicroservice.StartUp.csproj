@@ -12,8 +12,9 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\EasyMicroservices.SupportsMicroservice.Services\EasyMicroservices.SupportsMicroservice.Services.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\EasyMicroservices.SupportsMicroservice.Services\EasyMicroservices.SupportsMicroservice.Services.csproj" />
+	</ItemGroup>
+
 
 </Project>

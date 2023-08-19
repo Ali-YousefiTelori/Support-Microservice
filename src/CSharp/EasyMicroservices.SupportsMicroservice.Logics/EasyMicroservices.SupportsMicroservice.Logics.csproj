@@ -15,9 +15,7 @@
     <Folder Include="DatabaseLogics\" />
     <Folder Include="Mappers\" />
   </ItemGroup>
-  
-  <ItemGroup>
-    <ProjectReference Include="..\EasyMicroservices.SupportsMicroservice.Database\EasyMicroservices.SupportsMicroservice.Database.csproj" />
-  </ItemGroup>
-  
+	<ItemGroup>
+		<ProjectReference Include="..\EasyMicroservices.SupportsMicroservice.Database\EasyMicroservices.SupportsMicroservice.Database.csproj" />
+	</ItemGroup>
 </Project>
