@@ -24,7 +24,7 @@ namespace EasyMicroservices.SupportsMicroservice.WebApi
             app.Services.AddTransient((serviceProvider) => new UnitOfWork(serviceProvider));
             app.Services.AddTransient(serviceProvider => new SupportContext(serviceProvider.GetService<IEntityFrameworkCoreDatabaseBuilder>()));
             app.Services.AddTransient<IEntityFrameworkCoreDatabaseBuilder, DatabaseBuilder>();
-            StartUpExtensions.AddWhiteLabel("Questions", "RootAddresses:WhiteLabel");
+            StartUpExtensions.AddWhiteLabel("Supports", "RootAddresses:WhiteLabel");
             return app;
         }
 
