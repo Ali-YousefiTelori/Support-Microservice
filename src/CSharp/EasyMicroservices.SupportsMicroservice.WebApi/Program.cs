@@ -5,7 +5,7 @@ using EasyMicroservices.SupportsMicroservice;
 using EasyMicroservices.SupportsMicroservice;
 using EasyMicroservices.SupportsMicroservice.Database.Contexts;
 
-namespace EasyMicroservices.CommentsMicroservice.WebApi
+namespace EasyMicroservices.SupportsMicroservice.WebApi
 {
     public class Program
     {
