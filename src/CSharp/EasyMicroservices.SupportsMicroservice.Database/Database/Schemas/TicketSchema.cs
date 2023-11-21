@@ -1,4 +1,5 @@
-﻿using EasyMicroservices.Cores.Interfaces;
+﻿using EasyMicroservices.Cores.Database.Schemas;
+using EasyMicroservices.Cores.Interfaces;
 using EasyMicroservices.SupportsMicroservice.DataTypes;
 using System;
 using System.Collections.Generic;
@@ -8,16 +9,11 @@ using System.Threading.Tasks;
 
 namespace EasyMicroservices.SupportsMicroservice.Database.Schemas
 {
-    public class TicketSchema : IUniqueIdentitySchema, ISoftDeleteSchema, IDateTimeSchema
+    public class TicketSchema : FullAbilitySchema
     {
         public string Title { get; set; }
         public TicketStatusType Status { get; set; }
         public TicketSensitivityStatusType SensitivityStatus { get; set; }
         public int? Priority { get; set; }
-        public string UniqueIdentity { get; set; }
-        public bool IsDeleted { get; set; }
-        public DateTime? DeletedDateTime { get; set; }
-        public DateTime CreationDateTime { get; set; }
-        public DateTime? ModificationDateTime { get; set; }
     }
 }
