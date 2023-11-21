@@ -11,7 +11,7 @@ namespace EasyMicroservices.SupportsMicroservice.Database.Entities
     public class DepartmentEntity : DepartmentSchema, IIdSchema<long>
     {
         public long Id { get; set; }
-        public ICollection<TicketDepartmentEntity> TicketDepartment { get; set; }
+        public ICollection<TicketDepartmentEntity> TicketDepartments { get; set; }
 
     }
 }
