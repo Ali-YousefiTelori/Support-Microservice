@@ -5,6 +5,496 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Department/Add": {
+      "post": {
+        "tags": [
+          "Department"
+        ],
+        "operationId": "Add",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateDepartmentRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateDepartmentRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateDepartmentRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int64MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int64MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int64MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Department/AddBulk": {
+      "post": {
+        "tags": [
+          "Department"
+        ],
+        "operationId": "AddBulk",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateDepartmentRequestContractCreateBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateDepartmentRequestContractCreateBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateDepartmentRequestContractCreateBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Department/Update": {
+      "put": {
+        "tags": [
+          "Department"
+        ],
+        "operationId": "Update",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateDepartmentRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateDepartmentRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateDepartmentRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DepartmentContractMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DepartmentContractMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DepartmentContractMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Department/UpdateChangedValuesOnly": {
+      "put": {
+        "tags": [
+          "Department"
+        ],
+        "operationId": "UpdateChangedValuesOnly",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateDepartmentRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateDepartmentRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateDepartmentRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DepartmentContractMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DepartmentContractMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DepartmentContractMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Department/UpdateBulk": {
+      "put": {
+        "tags": [
+          "Department"
+        ],
+        "operationId": "UpdateBulk",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateDepartmentRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateDepartmentRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateDepartmentRequestContractUpdateBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Department/UpdateBulkChangedValuesOnly": {
+      "put": {
+        "tags": [
+          "Department"
+        ],
+        "operationId": "UpdateBulkChangedValuesOnly",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateDepartmentRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateDepartmentRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateDepartmentRequestContractUpdateBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Department/HardDeleteById": {
+      "delete": {
+        "tags": [
+          "Department"
+        ],
+        "operationId": "HardDeleteById",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Department/HardDeleteBulkByIds": {
+      "delete": {
+        "tags": [
+          "Department"
+        ],
+        "operationId": "HardDeleteBulkByIds",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Department/SoftDeleteById": {
+      "delete": {
+        "tags": [
+          "Department"
+        ],
+        "operationId": "SoftDeleteById",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Department/SoftDeleteBulkByIds": {
+      "delete": {
+        "tags": [
+          "Department"
+        ],
+        "operationId": "SoftDeleteBulkByIds",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Department/GetById": {
       "post": {
         "tags": [
@@ -103,27 +593,27 @@
         }
       }
     },
-    "/api/Department/Add": {
+    "/api/Department/Filter": {
       "post": {
         "tags": [
           "Department"
         ],
-        "operationId": "Add",
+        "operationId": "Filter",
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateDepartmentRequestContract"
+                "$ref": "#/components/schemas/FilterRequestContract"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateDepartmentRequestContract"
+                "$ref": "#/components/schemas/FilterRequestContract"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateDepartmentRequestContract"
+                "$ref": "#/components/schemas/FilterRequestContract"
               }
             }
           }
@@ -134,164 +624,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Int64MessageContract"
+                  "$ref": "#/components/schemas/DepartmentContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Int64MessageContract"
+                  "$ref": "#/components/schemas/DepartmentContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Int64MessageContract"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Department/Update": {
-      "put": {
-        "tags": [
-          "Department"
-        ],
-        "operationId": "Update",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateDepartmentRequestContract"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateDepartmentRequestContract"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateDepartmentRequestContract"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/DepartmentContractMessageContract"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/DepartmentContractMessageContract"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/DepartmentContractMessageContract"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Department/HardDeleteById": {
-      "delete": {
-        "tags": [
-          "Department"
-        ],
-        "operationId": "HardDeleteById",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64DeleteRequestContract"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64DeleteRequestContract"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64DeleteRequestContract"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Department/SoftDeleteById": {
-      "delete": {
-        "tags": [
-          "Department"
-        ],
-        "operationId": "SoftDeleteById",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
+                  "$ref": "#/components/schemas/DepartmentContractListMessageContract"
                 }
               }
             }
@@ -371,6 +714,496 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/DepartmentContractListMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Ticket/Add": {
+      "post": {
+        "tags": [
+          "Ticket"
+        ],
+        "operationId": "Add2",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTicketRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTicketRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTicketRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int64MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int64MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int64MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Ticket/AddBulk": {
+      "post": {
+        "tags": [
+          "Ticket"
+        ],
+        "operationId": "AddBulk2",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTicketRequestContractCreateBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTicketRequestContractCreateBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTicketRequestContractCreateBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Ticket/Update": {
+      "put": {
+        "tags": [
+          "Ticket"
+        ],
+        "operationId": "Update2",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketContractMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketContractMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketContractMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Ticket/UpdateChangedValuesOnly": {
+      "put": {
+        "tags": [
+          "Ticket"
+        ],
+        "operationId": "UpdateChangedValuesOnly2",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketContractMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketContractMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketContractMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Ticket/UpdateBulk": {
+      "put": {
+        "tags": [
+          "Ticket"
+        ],
+        "operationId": "UpdateBulk2",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketRequestContractUpdateBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Ticket/UpdateBulkChangedValuesOnly": {
+      "put": {
+        "tags": [
+          "Ticket"
+        ],
+        "operationId": "UpdateBulkChangedValuesOnly2",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketRequestContractUpdateBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Ticket/HardDeleteById": {
+      "delete": {
+        "tags": [
+          "Ticket"
+        ],
+        "operationId": "HardDeleteById2",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Ticket/HardDeleteBulkByIds": {
+      "delete": {
+        "tags": [
+          "Ticket"
+        ],
+        "operationId": "HardDeleteBulkByIds2",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Ticket/SoftDeleteById": {
+      "delete": {
+        "tags": [
+          "Ticket"
+        ],
+        "operationId": "SoftDeleteById2",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Ticket/SoftDeleteBulkByIds": {
+      "delete": {
+        "tags": [
+          "Ticket"
+        ],
+        "operationId": "SoftDeleteBulkByIds2",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
                 }
               }
             }
@@ -476,27 +1309,27 @@
         }
       }
     },
-    "/api/Ticket/Add": {
+    "/api/Ticket/Filter": {
       "post": {
         "tags": [
           "Ticket"
         ],
-        "operationId": "Add2",
+        "operationId": "Filter2",
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateTicketRequestContract"
+                "$ref": "#/components/schemas/FilterRequestContract"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateTicketRequestContract"
+                "$ref": "#/components/schemas/FilterRequestContract"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateTicketRequestContract"
+                "$ref": "#/components/schemas/FilterRequestContract"
               }
             }
           }
@@ -507,164 +1340,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Int64MessageContract"
+                  "$ref": "#/components/schemas/TicketContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Int64MessageContract"
+                  "$ref": "#/components/schemas/TicketContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Int64MessageContract"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Ticket/Update": {
-      "put": {
-        "tags": [
-          "Ticket"
-        ],
-        "operationId": "Update2",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateTicketRequestContract"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateTicketRequestContract"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateTicketRequestContract"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/TicketContractMessageContract"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/TicketContractMessageContract"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/TicketContractMessageContract"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Ticket/HardDeleteById": {
-      "delete": {
-        "tags": [
-          "Ticket"
-        ],
-        "operationId": "HardDeleteById2",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64DeleteRequestContract"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64DeleteRequestContract"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64DeleteRequestContract"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Ticket/SoftDeleteById": {
-      "delete": {
-        "tags": [
-          "Ticket"
-        ],
-        "operationId": "SoftDeleteById2",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
+                  "$ref": "#/components/schemas/TicketContractListMessageContract"
                 }
               }
             }
@@ -849,6 +1535,398 @@
         }
       }
     },
+    "/api/TicketAssign/AddBulk": {
+      "post": {
+        "tags": [
+          "TicketAssign"
+        ],
+        "operationId": "AddBulk3",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTicketAssignRequestContractCreateBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTicketAssignRequestContractCreateBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTicketAssignRequestContractCreateBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketAssign/UpdateChangedValuesOnly": {
+      "put": {
+        "tags": [
+          "TicketAssign"
+        ],
+        "operationId": "UpdateChangedValuesOnly3",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketAssignRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketAssignRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketAssignRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketAssignContractMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketAssignContractMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketAssignContractMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketAssign/UpdateBulk": {
+      "put": {
+        "tags": [
+          "TicketAssign"
+        ],
+        "operationId": "UpdateBulk3",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketAssignRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketAssignRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketAssignRequestContractUpdateBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketAssign/UpdateBulkChangedValuesOnly": {
+      "put": {
+        "tags": [
+          "TicketAssign"
+        ],
+        "operationId": "UpdateBulkChangedValuesOnly3",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketAssignRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketAssignRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketAssignRequestContractUpdateBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketAssign/HardDeleteById": {
+      "delete": {
+        "tags": [
+          "TicketAssign"
+        ],
+        "operationId": "HardDeleteById3",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketAssign/HardDeleteBulkByIds": {
+      "delete": {
+        "tags": [
+          "TicketAssign"
+        ],
+        "operationId": "HardDeleteBulkByIds3",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketAssign/SoftDeleteById": {
+      "delete": {
+        "tags": [
+          "TicketAssign"
+        ],
+        "operationId": "SoftDeleteById3",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketAssign/SoftDeleteBulkByIds": {
+      "delete": {
+        "tags": [
+          "TicketAssign"
+        ],
+        "operationId": "SoftDeleteBulkByIds3",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/TicketAssign/GetById": {
       "post": {
         "tags": [
@@ -947,27 +2025,27 @@
         }
       }
     },
-    "/api/TicketAssign/HardDeleteById": {
-      "delete": {
+    "/api/TicketAssign/Filter": {
+      "post": {
         "tags": [
           "TicketAssign"
         ],
-        "operationId": "HardDeleteById3",
+        "operationId": "Filter3",
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+                "$ref": "#/components/schemas/FilterRequestContract"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+                "$ref": "#/components/schemas/FilterRequestContract"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+                "$ref": "#/components/schemas/FilterRequestContract"
               }
             }
           }
@@ -978,66 +2056,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
+                  "$ref": "#/components/schemas/TicketAssignContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
+                  "$ref": "#/components/schemas/TicketAssignContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/TicketAssign/SoftDeleteById": {
-      "delete": {
-        "tags": [
-          "TicketAssign"
-        ],
-        "operationId": "SoftDeleteById3",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
+                  "$ref": "#/components/schemas/TicketAssignContractListMessageContract"
                 }
               }
             }
@@ -1173,6 +2202,447 @@
         }
       }
     },
+    "/api/TicketDepartment/AddBulk": {
+      "post": {
+        "tags": [
+          "TicketDepartment"
+        ],
+        "operationId": "AddBulk4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTicketDepartmentRequestContractCreateBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTicketDepartmentRequestContractCreateBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTicketDepartmentRequestContractCreateBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketDepartment/Update": {
+      "put": {
+        "tags": [
+          "TicketDepartment"
+        ],
+        "operationId": "Update4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketDepartmentRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketDepartmentRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketDepartmentRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketDepartmentContractMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketDepartmentContractMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketDepartmentContractMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketDepartment/UpdateChangedValuesOnly": {
+      "put": {
+        "tags": [
+          "TicketDepartment"
+        ],
+        "operationId": "UpdateChangedValuesOnly4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketDepartmentRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketDepartmentRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketDepartmentRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketDepartmentContractMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketDepartmentContractMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketDepartmentContractMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketDepartment/UpdateBulk": {
+      "put": {
+        "tags": [
+          "TicketDepartment"
+        ],
+        "operationId": "UpdateBulk4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketDepartmentRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketDepartmentRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketDepartmentRequestContractUpdateBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketDepartment/UpdateBulkChangedValuesOnly": {
+      "put": {
+        "tags": [
+          "TicketDepartment"
+        ],
+        "operationId": "UpdateBulkChangedValuesOnly4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketDepartmentRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketDepartmentRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketDepartmentRequestContractUpdateBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketDepartment/HardDeleteById": {
+      "delete": {
+        "tags": [
+          "TicketDepartment"
+        ],
+        "operationId": "HardDeleteById4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketDepartment/HardDeleteBulkByIds": {
+      "delete": {
+        "tags": [
+          "TicketDepartment"
+        ],
+        "operationId": "HardDeleteBulkByIds4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketDepartment/SoftDeleteById": {
+      "delete": {
+        "tags": [
+          "TicketDepartment"
+        ],
+        "operationId": "SoftDeleteById4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketDepartment/SoftDeleteBulkByIds": {
+      "delete": {
+        "tags": [
+          "TicketDepartment"
+        ],
+        "operationId": "SoftDeleteBulkByIds4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/TicketDepartment/GetById": {
       "post": {
         "tags": [
@@ -1271,27 +2741,27 @@
         }
       }
     },
-    "/api/TicketDepartment/Update": {
-      "put": {
+    "/api/TicketDepartment/Filter": {
+      "post": {
         "tags": [
           "TicketDepartment"
         ],
-        "operationId": "Update4",
+        "operationId": "Filter4",
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateTicketDepartmentRequestContract"
+                "$ref": "#/components/schemas/FilterRequestContract"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateTicketDepartmentRequestContract"
+                "$ref": "#/components/schemas/FilterRequestContract"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateTicketDepartmentRequestContract"
+                "$ref": "#/components/schemas/FilterRequestContract"
               }
             }
           }
@@ -1302,115 +2772,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/TicketDepartmentContractMessageContract"
+                  "$ref": "#/components/schemas/TicketDepartmentContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/TicketDepartmentContractMessageContract"
+                  "$ref": "#/components/schemas/TicketDepartmentContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/TicketDepartmentContractMessageContract"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/TicketDepartment/HardDeleteById": {
-      "delete": {
-        "tags": [
-          "TicketDepartment"
-        ],
-        "operationId": "HardDeleteById4",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64DeleteRequestContract"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64DeleteRequestContract"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64DeleteRequestContract"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/TicketDepartment/SoftDeleteById": {
-      "delete": {
-        "tags": [
-          "TicketDepartment"
-        ],
-        "operationId": "SoftDeleteById4",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
+                  "$ref": "#/components/schemas/TicketDepartmentContractListMessageContract"
                 }
               }
             }
@@ -1595,6 +2967,398 @@
         }
       }
     },
+    "/api/TicketHistory/AddBulk": {
+      "post": {
+        "tags": [
+          "TicketHistory"
+        ],
+        "operationId": "AddBulk5",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTicketHistoryRequestContractCreateBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTicketHistoryRequestContractCreateBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTicketHistoryRequestContractCreateBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketHistory/UpdateChangedValuesOnly": {
+      "put": {
+        "tags": [
+          "TicketHistory"
+        ],
+        "operationId": "UpdateChangedValuesOnly5",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketHistoryRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketHistoryRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketHistoryRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketHistoryContractMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketHistoryContractMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketHistoryContractMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketHistory/UpdateBulk": {
+      "put": {
+        "tags": [
+          "TicketHistory"
+        ],
+        "operationId": "UpdateBulk5",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketHistoryRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketHistoryRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketHistoryRequestContractUpdateBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketHistory/UpdateBulkChangedValuesOnly": {
+      "put": {
+        "tags": [
+          "TicketHistory"
+        ],
+        "operationId": "UpdateBulkChangedValuesOnly5",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketHistoryRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketHistoryRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketHistoryRequestContractUpdateBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketHistory/HardDeleteById": {
+      "delete": {
+        "tags": [
+          "TicketHistory"
+        ],
+        "operationId": "HardDeleteById5",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketHistory/HardDeleteBulkByIds": {
+      "delete": {
+        "tags": [
+          "TicketHistory"
+        ],
+        "operationId": "HardDeleteBulkByIds5",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketHistory/SoftDeleteById": {
+      "delete": {
+        "tags": [
+          "TicketHistory"
+        ],
+        "operationId": "SoftDeleteById5",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketHistory/SoftDeleteBulkByIds": {
+      "delete": {
+        "tags": [
+          "TicketHistory"
+        ],
+        "operationId": "SoftDeleteBulkByIds5",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/TicketHistory/GetById": {
       "post": {
         "tags": [
@@ -1693,27 +3457,27 @@
         }
       }
     },
-    "/api/TicketHistory/HardDeleteById": {
-      "delete": {
+    "/api/TicketHistory/Filter": {
+      "post": {
         "tags": [
           "TicketHistory"
         ],
-        "operationId": "HardDeleteById5",
+        "operationId": "Filter5",
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+                "$ref": "#/components/schemas/FilterRequestContract"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+                "$ref": "#/components/schemas/FilterRequestContract"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+                "$ref": "#/components/schemas/FilterRequestContract"
               }
             }
           }
@@ -1724,66 +3488,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
+                  "$ref": "#/components/schemas/TicketHistoryContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
+                  "$ref": "#/components/schemas/TicketHistoryContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/TicketHistory/SoftDeleteById": {
-      "delete": {
-        "tags": [
-          "TicketHistory"
-        ],
-        "operationId": "SoftDeleteById5",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
+                  "$ref": "#/components/schemas/TicketHistoryContractListMessageContract"
                 }
               }
             }
@@ -1919,6 +3634,447 @@
         }
       }
     },
+    "/api/TicketSupportTimeHistory/AddBulk": {
+      "post": {
+        "tags": [
+          "TicketSupportTimeHistory"
+        ],
+        "operationId": "AddBulk6",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTicketSupportTimeHistoryRequestContractCreateBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTicketSupportTimeHistoryRequestContractCreateBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTicketSupportTimeHistoryRequestContractCreateBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketSupportTimeHistory/Update": {
+      "put": {
+        "tags": [
+          "TicketSupportTimeHistory"
+        ],
+        "operationId": "Update6",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketSupportTimeHistoryRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketSupportTimeHistoryRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketSupportTimeHistoryRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketSupportTimeHistoryContractMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketSupportTimeHistoryContractMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketSupportTimeHistoryContractMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketSupportTimeHistory/UpdateChangedValuesOnly": {
+      "put": {
+        "tags": [
+          "TicketSupportTimeHistory"
+        ],
+        "operationId": "UpdateChangedValuesOnly6",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketSupportTimeHistoryRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketSupportTimeHistoryRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketSupportTimeHistoryRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketSupportTimeHistoryContractMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketSupportTimeHistoryContractMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketSupportTimeHistoryContractMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketSupportTimeHistory/UpdateBulk": {
+      "put": {
+        "tags": [
+          "TicketSupportTimeHistory"
+        ],
+        "operationId": "UpdateBulk6",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketSupportTimeHistoryRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketSupportTimeHistoryRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketSupportTimeHistoryRequestContractUpdateBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketSupportTimeHistory/UpdateBulkChangedValuesOnly": {
+      "put": {
+        "tags": [
+          "TicketSupportTimeHistory"
+        ],
+        "operationId": "UpdateBulkChangedValuesOnly6",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketSupportTimeHistoryRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketSupportTimeHistoryRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketSupportTimeHistoryRequestContractUpdateBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketSupportTimeHistory/HardDeleteById": {
+      "delete": {
+        "tags": [
+          "TicketSupportTimeHistory"
+        ],
+        "operationId": "HardDeleteById6",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketSupportTimeHistory/HardDeleteBulkByIds": {
+      "delete": {
+        "tags": [
+          "TicketSupportTimeHistory"
+        ],
+        "operationId": "HardDeleteBulkByIds6",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketSupportTimeHistory/SoftDeleteById": {
+      "delete": {
+        "tags": [
+          "TicketSupportTimeHistory"
+        ],
+        "operationId": "SoftDeleteById6",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketSupportTimeHistory/SoftDeleteBulkByIds": {
+      "delete": {
+        "tags": [
+          "TicketSupportTimeHistory"
+        ],
+        "operationId": "SoftDeleteBulkByIds6",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/TicketSupportTimeHistory/GetById": {
       "post": {
         "tags": [
@@ -2017,27 +4173,27 @@
         }
       }
     },
-    "/api/TicketSupportTimeHistory/Update": {
-      "put": {
+    "/api/TicketSupportTimeHistory/Filter": {
+      "post": {
         "tags": [
           "TicketSupportTimeHistory"
         ],
-        "operationId": "Update6",
+        "operationId": "Filter6",
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateTicketSupportTimeHistoryRequestContract"
+                "$ref": "#/components/schemas/FilterRequestContract"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateTicketSupportTimeHistoryRequestContract"
+                "$ref": "#/components/schemas/FilterRequestContract"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateTicketSupportTimeHistoryRequestContract"
+                "$ref": "#/components/schemas/FilterRequestContract"
               }
             }
           }
@@ -2048,115 +4204,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/TicketSupportTimeHistoryContractMessageContract"
+                  "$ref": "#/components/schemas/TicketSupportTimeHistoryContractListMessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/TicketSupportTimeHistoryContractMessageContract"
+                  "$ref": "#/components/schemas/TicketSupportTimeHistoryContractListMessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/TicketSupportTimeHistoryContractMessageContract"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/TicketSupportTimeHistory/HardDeleteById": {
-      "delete": {
-        "tags": [
-          "TicketSupportTimeHistory"
-        ],
-        "operationId": "HardDeleteById6",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64DeleteRequestContract"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64DeleteRequestContract"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64DeleteRequestContract"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/TicketSupportTimeHistory/SoftDeleteById": {
-      "delete": {
-        "tags": [
-          "TicketSupportTimeHistory"
-        ],
-        "operationId": "SoftDeleteById6",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/MessageContract"
+                  "$ref": "#/components/schemas/TicketSupportTimeHistoryContractListMessageContract"
                 }
               }
             }
@@ -2260,6 +4318,21 @@
           }
         }
       },
+      "CreateDepartmentRequestContractCreateBulkRequestContract": {
+        "title": "CreateBulkRequestContract<CreateDepartmentRequestContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "items": {
+            "title": "List<CreateDepartmentRequestContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/CreateDepartmentRequestContract"
+            }
+          }
+        }
+      },
       "CreateTicketAssignRequestContract": {
         "type": "object",
         "additionalProperties": false,
@@ -2271,6 +4344,21 @@
           "uniqueIdentity": {
             "type": "string",
             "nullable": true
+          }
+        }
+      },
+      "CreateTicketAssignRequestContractCreateBulkRequestContract": {
+        "title": "CreateBulkRequestContract<CreateTicketAssignRequestContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "items": {
+            "title": "List<CreateTicketAssignRequestContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/CreateTicketAssignRequestContract"
+            }
           }
         }
       },
@@ -2292,6 +4380,21 @@
           }
         }
       },
+      "CreateTicketDepartmentRequestContractCreateBulkRequestContract": {
+        "title": "CreateBulkRequestContract<CreateTicketDepartmentRequestContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "items": {
+            "title": "List<CreateTicketDepartmentRequestContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/CreateTicketDepartmentRequestContract"
+            }
+          }
+        }
+      },
       "CreateTicketHistoryRequestContract": {
         "type": "object",
         "additionalProperties": false,
@@ -2307,6 +4410,21 @@
           "uniqueIdentity": {
             "type": "string",
             "nullable": true
+          }
+        }
+      },
+      "CreateTicketHistoryRequestContractCreateBulkRequestContract": {
+        "title": "CreateBulkRequestContract<CreateTicketHistoryRequestContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "items": {
+            "title": "List<CreateTicketHistoryRequestContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/CreateTicketHistoryRequestContract"
+            }
           }
         }
       },
@@ -2336,6 +4454,21 @@
           }
         }
       },
+      "CreateTicketRequestContractCreateBulkRequestContract": {
+        "title": "CreateBulkRequestContract<CreateTicketRequestContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "items": {
+            "title": "List<CreateTicketRequestContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/CreateTicketRequestContract"
+            }
+          }
+        }
+      },
       "CreateTicketSupportTimeHistoryRequestContract": {
         "type": "object",
         "additionalProperties": false,
@@ -2355,6 +4488,21 @@
           "uniqueIdentity": {
             "type": "string",
             "nullable": true
+          }
+        }
+      },
+      "CreateTicketSupportTimeHistoryRequestContractCreateBulkRequestContract": {
+        "title": "CreateBulkRequestContract<CreateTicketSupportTimeHistoryRequestContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "items": {
+            "title": "List<CreateTicketSupportTimeHistoryRequestContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/CreateTicketSupportTimeHistoryRequestContract"
+            }
           }
         }
       },
@@ -2396,7 +4544,7 @@
         }
       },
       "DepartmentContractListMessageContract": {
-        "title": "MessageContract<List`1>",
+        "title": "ListMessageContract<DepartmentContract>",
         "type": "object",
         "additionalProperties": false,
         "properties": {
@@ -2406,6 +4554,9 @@
           "error": {
             "$ref": "#/components/schemas/ErrorContract"
           },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
+          },
           "result": {
             "title": "List<DepartmentContract>",
             "type": "array",
@@ -2413,6 +4564,14 @@
             "items": {
               "$ref": "#/components/schemas/DepartmentContract"
             }
+          },
+          "totalCount": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "hasItems": {
+            "type": "boolean",
+            "readOnly": true
           }
         }
       },
@@ -2426,6 +4585,9 @@
           },
           "error": {
             "$ref": "#/components/schemas/ErrorContract"
+          },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
           },
           "result": {
             "$ref": "#/components/schemas/DepartmentContract"
@@ -2460,8 +4622,23 @@
             "nullable": true
           },
           "stackTrace": {
-            "type": "string",
-            "nullable": true
+            "title": "List<String>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "children": {
+            "title": "List<ErrorContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/ErrorContract"
+            }
+          },
+          "serviceDetails": {
+            "$ref": "#/components/schemas/ServiceDetailsContract"
           }
         }
       },
@@ -2478,7 +4655,7 @@
           "SessionAccessDenied",
           "AccessDenied",
           "InternalError",
-          "Dupplicate",
+          "Duplicate",
           "Empty",
           "NotFound",
           "ValidationsError",
@@ -2507,6 +4684,87 @@
           16
         ]
       },
+      "FilterRequestContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "isDeleted": {
+            "title": "Nullable<Boolean>",
+            "type": "boolean",
+            "nullable": true
+          },
+          "fromDeletedDateTime": {
+            "title": "Nullable<DateTime>",
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "toDeletedDateTime": {
+            "title": "Nullable<DateTime>",
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "fromCreationDateTime": {
+            "title": "Nullable<DateTime>",
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "toCreationDateTime": {
+            "title": "Nullable<DateTime>",
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "fromModificationDateTime": {
+            "title": "Nullable<DateTime>",
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "toModificationDateTime": {
+            "title": "Nullable<DateTime>",
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "uniqueIdentity": {
+            "type": "string",
+            "nullable": true
+          },
+          "uniqueIdentityType": {
+            "$ref": "#/components/schemas/GetUniqueIdentityType"
+          },
+          "index": {
+            "title": "Nullable<Int64>",
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "length": {
+            "title": "Nullable<Int64>",
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "sortColumnNames": {
+            "type": "string",
+            "nullable": true
+          },
+          "isDescending": {
+            "type": "boolean"
+          },
+          "text": {
+            "type": "string",
+            "nullable": true
+          },
+          "language": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
       "GetUniqueIdentityRequestContract": {
         "type": "object",
         "additionalProperties": false,
@@ -2514,6 +4772,49 @@
           "uniqueIdentity": {
             "type": "string",
             "nullable": true
+          },
+          "type": {
+            "$ref": "#/components/schemas/GetUniqueIdentityType"
+          }
+        }
+      },
+      "GetUniqueIdentityType": {
+        "type": "integer",
+        "format": "int32",
+        "x-enumNames": [
+          "None",
+          "Default",
+          "All",
+          "Other",
+          "Unknown",
+          "Nothing",
+          "OnlyParent",
+          "OnlyChilren"
+        ],
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "Int64DeleteBulkRequestContract": {
+        "title": "DeleteBulkRequestContract<Int64>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "ids": {
+            "title": "List<Int64>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            }
           }
         }
       },
@@ -2550,9 +4851,31 @@
           "error": {
             "$ref": "#/components/schemas/ErrorContract"
           },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
+          },
           "result": {
             "type": "integer",
             "format": "int64"
+          }
+        }
+      },
+      "Int64SoftDeleteBulkRequestContract": {
+        "title": "SoftDeleteBulkRequestContract<Int64>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "ids": {
+            "title": "List<Int64>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          "isDelete": {
+            "type": "boolean"
           }
         }
       },
@@ -2579,6 +4902,41 @@
           },
           "error": {
             "$ref": "#/components/schemas/ErrorContract"
+          },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
+          }
+        }
+      },
+      "ServiceDetailsContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "serviceRouteAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "methodName": {
+            "type": "string",
+            "nullable": true
+          },
+          "path": {
+            "type": "string",
+            "nullable": true
+          },
+          "projectName": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "SuccessContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "endUserMessage": {
+            "type": "string",
+            "nullable": true
           }
         }
       },
@@ -2620,7 +4978,7 @@
         }
       },
       "TicketAssignContractListMessageContract": {
-        "title": "MessageContract<List`1>",
+        "title": "ListMessageContract<TicketAssignContract>",
         "type": "object",
         "additionalProperties": false,
         "properties": {
@@ -2630,6 +4988,9 @@
           "error": {
             "$ref": "#/components/schemas/ErrorContract"
           },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
+          },
           "result": {
             "title": "List<TicketAssignContract>",
             "type": "array",
@@ -2637,6 +4998,14 @@
             "items": {
               "$ref": "#/components/schemas/TicketAssignContract"
             }
+          },
+          "totalCount": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "hasItems": {
+            "type": "boolean",
+            "readOnly": true
           }
         }
       },
@@ -2650,6 +5019,9 @@
           },
           "error": {
             "$ref": "#/components/schemas/ErrorContract"
+          },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
           },
           "result": {
             "$ref": "#/components/schemas/TicketAssignContract"
@@ -2706,7 +5078,7 @@
         }
       },
       "TicketContractListMessageContract": {
-        "title": "MessageContract<List`1>",
+        "title": "ListMessageContract<TicketContract>",
         "type": "object",
         "additionalProperties": false,
         "properties": {
@@ -2716,6 +5088,9 @@
           "error": {
             "$ref": "#/components/schemas/ErrorContract"
           },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
+          },
           "result": {
             "title": "List<TicketContract>",
             "type": "array",
@@ -2723,6 +5098,14 @@
             "items": {
               "$ref": "#/components/schemas/TicketContract"
             }
+          },
+          "totalCount": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "hasItems": {
+            "type": "boolean",
+            "readOnly": true
           }
         }
       },
@@ -2736,6 +5119,9 @@
           },
           "error": {
             "$ref": "#/components/schemas/ErrorContract"
+          },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
           },
           "result": {
             "$ref": "#/components/schemas/TicketContract"
@@ -2784,7 +5170,7 @@
         }
       },
       "TicketDepartmentContractListMessageContract": {
-        "title": "MessageContract<List`1>",
+        "title": "ListMessageContract<TicketDepartmentContract>",
         "type": "object",
         "additionalProperties": false,
         "properties": {
@@ -2794,6 +5180,9 @@
           "error": {
             "$ref": "#/components/schemas/ErrorContract"
           },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
+          },
           "result": {
             "title": "List<TicketDepartmentContract>",
             "type": "array",
@@ -2801,6 +5190,14 @@
             "items": {
               "$ref": "#/components/schemas/TicketDepartmentContract"
             }
+          },
+          "totalCount": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "hasItems": {
+            "type": "boolean",
+            "readOnly": true
           }
         }
       },
@@ -2814,6 +5211,9 @@
           },
           "error": {
             "$ref": "#/components/schemas/ErrorContract"
+          },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
           },
           "result": {
             "$ref": "#/components/schemas/TicketDepartmentContract"
@@ -2862,7 +5262,7 @@
         }
       },
       "TicketHistoryContractListMessageContract": {
-        "title": "MessageContract<List`1>",
+        "title": "ListMessageContract<TicketHistoryContract>",
         "type": "object",
         "additionalProperties": false,
         "properties": {
@@ -2872,6 +5272,9 @@
           "error": {
             "$ref": "#/components/schemas/ErrorContract"
           },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
+          },
           "result": {
             "title": "List<TicketHistoryContract>",
             "type": "array",
@@ -2879,6 +5282,14 @@
             "items": {
               "$ref": "#/components/schemas/TicketHistoryContract"
             }
+          },
+          "totalCount": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "hasItems": {
+            "type": "boolean",
+            "readOnly": true
           }
         }
       },
@@ -2892,6 +5303,9 @@
           },
           "error": {
             "$ref": "#/components/schemas/ErrorContract"
+          },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
           },
           "result": {
             "$ref": "#/components/schemas/TicketHistoryContract"
@@ -3002,7 +5416,7 @@
         }
       },
       "TicketSupportTimeHistoryContractListMessageContract": {
-        "title": "MessageContract<List`1>",
+        "title": "ListMessageContract<TicketSupportTimeHistoryContract>",
         "type": "object",
         "additionalProperties": false,
         "properties": {
@@ -3012,6 +5426,9 @@
           "error": {
             "$ref": "#/components/schemas/ErrorContract"
           },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
+          },
           "result": {
             "title": "List<TicketSupportTimeHistoryContract>",
             "type": "array",
@@ -3019,6 +5436,14 @@
             "items": {
               "$ref": "#/components/schemas/TicketSupportTimeHistoryContract"
             }
+          },
+          "totalCount": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "hasItems": {
+            "type": "boolean",
+            "readOnly": true
           }
         }
       },
@@ -3032,6 +5457,9 @@
           },
           "error": {
             "$ref": "#/components/schemas/ErrorContract"
+          },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
           },
           "result": {
             "$ref": "#/components/schemas/TicketSupportTimeHistoryContract"
@@ -3056,6 +5484,21 @@
           }
         }
       },
+      "UpdateDepartmentRequestContractUpdateBulkRequestContract": {
+        "title": "UpdateBulkRequestContract<UpdateDepartmentRequestContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "items": {
+            "title": "List<UpdateDepartmentRequestContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/UpdateDepartmentRequestContract"
+            }
+          }
+        }
+      },
       "UpdateTicketAssignRequestContract": {
         "type": "object",
         "additionalProperties": false,
@@ -3071,6 +5514,21 @@
           "uniqueIdentity": {
             "type": "string",
             "nullable": true
+          }
+        }
+      },
+      "UpdateTicketAssignRequestContractUpdateBulkRequestContract": {
+        "title": "UpdateBulkRequestContract<UpdateTicketAssignRequestContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "items": {
+            "title": "List<UpdateTicketAssignRequestContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/UpdateTicketAssignRequestContract"
+            }
           }
         }
       },
@@ -3096,6 +5554,21 @@
           }
         }
       },
+      "UpdateTicketDepartmentRequestContractUpdateBulkRequestContract": {
+        "title": "UpdateBulkRequestContract<UpdateTicketDepartmentRequestContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "items": {
+            "title": "List<UpdateTicketDepartmentRequestContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/UpdateTicketDepartmentRequestContract"
+            }
+          }
+        }
+      },
       "UpdateTicketHistoryRequestContract": {
         "type": "object",
         "additionalProperties": false,
@@ -3115,6 +5588,21 @@
           "uniqueIdentity": {
             "type": "string",
             "nullable": true
+          }
+        }
+      },
+      "UpdateTicketHistoryRequestContractUpdateBulkRequestContract": {
+        "title": "UpdateBulkRequestContract<UpdateTicketHistoryRequestContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "items": {
+            "title": "List<UpdateTicketHistoryRequestContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/UpdateTicketHistoryRequestContract"
+            }
           }
         }
       },
@@ -3148,6 +5636,21 @@
           }
         }
       },
+      "UpdateTicketRequestContractUpdateBulkRequestContract": {
+        "title": "UpdateBulkRequestContract<UpdateTicketRequestContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "items": {
+            "title": "List<UpdateTicketRequestContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/UpdateTicketRequestContract"
+            }
+          }
+        }
+      },
       "UpdateTicketSupportTimeHistoryRequestContract": {
         "type": "object",
         "additionalProperties": false,
@@ -3171,6 +5674,21 @@
           "uniqueIdentity": {
             "type": "string",
             "nullable": true
+          }
+        }
+      },
+      "UpdateTicketSupportTimeHistoryRequestContractUpdateBulkRequestContract": {
+        "title": "UpdateBulkRequestContract<UpdateTicketSupportTimeHistoryRequestContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "items": {
+            "title": "List<UpdateTicketSupportTimeHistoryRequestContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/UpdateTicketSupportTimeHistoryRequestContract"
+            }
           }
         }
       },

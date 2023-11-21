@@ -39,7 +39,7 @@ namespace EasyMicroservices.SupportsMicroservice.Database.Contexts
                 model.HasKey(x => x.Id);
 
                 model.HasOne(x => x.TicketEntity)
-                .WithMany(x => x.TicketHistory)
+                .WithMany(x => x.TicketHistories)
                 .HasForeignKey(x => x.TicketId);
             });
             modelBuilder.Entity<DepartmentEntity>(model =>
@@ -52,12 +52,12 @@ namespace EasyMicroservices.SupportsMicroservice.Database.Contexts
 
                 modelBuilder.Entity<TicketDepartmentEntity>()
                 .HasOne(bc => bc.Ticket)
-                .WithMany(b => b.TicketDepartment)
+                .WithMany(b => b.TicketDepartments)
                 .HasForeignKey(bc => bc.TicketId);
 
                 modelBuilder.Entity<TicketDepartmentEntity>()
                 .HasOne(bc => bc.Department)
-                .WithMany(b => b.TicketDepartment)
+                .WithMany(b => b.TicketDepartments)
                 .HasForeignKey(bc => bc.DepartmentId);
             });
             modelBuilder.Entity<TicketSupportTimeHistoryEntity>(model =>

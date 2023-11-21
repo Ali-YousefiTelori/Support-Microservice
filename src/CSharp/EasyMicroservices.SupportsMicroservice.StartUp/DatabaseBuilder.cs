@@ -20,8 +20,8 @@ namespace EasyMicroservices.SupportsMicroservice
 
         public void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseInMemoryDatabase("CommentDatabase");
-            //optionsBuilder.UseSqlServer(_configuration.GetConnectionString("local"));
+            //optionsBuilder.UseInMemoryDatabase("CommentDatabase");
+            optionsBuilder.UseSqlServer(_configuration.GetConnectionString("local"));
         }
     }
 }
