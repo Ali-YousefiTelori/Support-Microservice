@@ -1,4 +1,5 @@
 ﻿using EasyMicroservices.Cores.AspCoreApi;
+using EasyMicroservices.Cores.AspEntityFrameworkCoreApi.Interfaces;
 using EasyMicroservices.Cores.Contracts.Requests;
 using EasyMicroservices.Cores.Database.Interfaces;
 using EasyMicroservices.ServiceContracts;
@@ -12,10 +13,13 @@ namespace EasyMicroservices.SupportsMicroservice.WebApi.Controllers
     {
         private readonly IContractLogic<TicketSupportTimeHistoryEntity, CreateTicketSupportTimeHistoryRequestContract, UpdateTicketSupportTimeHistoryRequestContract, TicketSupportTimeHistoryContract, long> _contractlogic;
         private readonly IContractLogic<TicketEntity, CreateTicketRequestContract, UpdateTicketRequestContract, TicketContract, long> _ticketlogic;
-        public TicketSupportTimeHistoryController(IContractLogic<TicketEntity, CreateTicketRequestContract, UpdateTicketRequestContract, TicketContract, long> ticketlogic , IContractLogic<TicketSupportTimeHistoryEntity, CreateTicketSupportTimeHistoryRequestContract, UpdateTicketSupportTimeHistoryRequestContract, TicketSupportTimeHistoryContract, long> contractLogic) : base(contractLogic)
+        public IUnitOfWork _uow;
+
+        public TicketSupportTimeHistoryController(IUnitOfWork uow) : base(uow)
         {
-            _ticketlogic = ticketlogic;
-            _contractlogic = contractLogic;
+            _uow = uow;
+            _contractlogic = uow.GetContractLogic<TicketSupportTimeHistoryEntity, CreateTicketSupportTimeHistoryRequestContract, UpdateTicketSupportTimeHistoryRequestContract, TicketSupportTimeHistoryContract, long>();
+            _ticketlogic = uow.GetContractLogic<TicketEntity, CreateTicketRequestContract, UpdateTicketRequestContract, TicketContract, long>();
         }
         public override async Task<MessageContract<long>> Add(CreateTicketSupportTimeHistoryRequestContract request, CancellationToken cancellationToken = default)
         {

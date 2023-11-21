@@ -1,4 +1,5 @@
 ﻿using EasyMicroservices.Cores.AspCoreApi;
+using EasyMicroservices.Cores.AspEntityFrameworkCoreApi.Interfaces;
 using EasyMicroservices.Cores.Contracts.Requests;
 using EasyMicroservices.Cores.Database.Interfaces;
 using EasyMicroservices.ServiceContracts;
@@ -12,11 +13,13 @@ namespace EasyMicroservices.SupportsMicroservice.WebApi.Controllers
     {
         private readonly IContractLogic<TicketAssignEntity, CreateTicketAssignRequestContract, UpdateTicketAssignRequestContract, TicketAssignContract, long> _contractlogic;
         private readonly IContractLogic<TicketEntity, CreateTicketRequestContract, UpdateTicketRequestContract, TicketContract, long> _ticketlogic;
+        public IUnitOfWork _uow;
 
-        public TicketAssignController(IContractLogic<TicketEntity, CreateTicketRequestContract, UpdateTicketRequestContract, TicketContract, long> ticketlogic , IContractLogic<TicketAssignEntity, CreateTicketAssignRequestContract, UpdateTicketAssignRequestContract, TicketAssignContract, long> contractLogic) : base(contractLogic)
+        public TicketAssignController(IUnitOfWork uow) : base(uow)
         {
-            _contractlogic = contractLogic;
-            _ticketlogic  = ticketlogic;
+            _uow = uow;
+            _contractlogic = uow.GetContractLogic<TicketAssignEntity, CreateTicketAssignRequestContract, UpdateTicketAssignRequestContract, TicketAssignContract, long>();
+            _ticketlogic = uow.GetContractLogic<TicketEntity, CreateTicketRequestContract, UpdateTicketRequestContract, TicketContract, long>();
         }
         public override async Task<MessageContract<long>> Add(CreateTicketAssignRequestContract request, CancellationToken cancellationToken = default)
         {
