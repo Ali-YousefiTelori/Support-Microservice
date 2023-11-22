@@ -17,7 +17,7 @@ namespace EasyMicroservices.SupportsMicroservice.Database.Contexts
         public DbSet<TicketDepartmentEntity> TicketDepartments { get; set; }
         public DbSet<TicketEntity> Tickets { get; set; }
         public DbSet<TicketHistoryEntity> TicketHistories { get; set; }
-        public DbSet<TicketSupportTimeHistoryEntity> TicketSupportTimeHistoryHistories { get; set; }
+        public DbSet<TicketSupportTimeHistoryEntity> TicketSupportTimeHistories { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
