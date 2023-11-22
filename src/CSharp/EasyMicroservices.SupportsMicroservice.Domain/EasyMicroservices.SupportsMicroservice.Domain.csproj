@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Contracts  Requests\Filters\" />
+    <Folder Include="Contracts\Requests\Filters\" />
     <Folder Include="Contracts\Responses\" />
   </ItemGroup>
 
