@@ -1,4 +1,5 @@
 ﻿using EasyMicroservices.Cores.AspCoreApi;
+using EasyMicroservices.Cores.AspEntityFrameworkCoreApi.Interfaces;
 using EasyMicroservices.Cores.Contracts.Requests;
 using EasyMicroservices.Cores.Database.Interfaces;
 using EasyMicroservices.ServiceContracts;
@@ -10,18 +11,17 @@ namespace EasyMicroservices.SupportsMicroservice.WebApi.Controllers
 {
     public class TicketDepartmentController : SimpleQueryServiceController<TicketDepartmentEntity, CreateTicketDepartmentRequestContract, UpdateTicketDepartmentRequestContract, TicketDepartmentContract, long>
     {
-        private readonly IContractLogic<TicketEntity, CreateTicketRequestContract, UpdateTicketRequestContract, TicketContract, long> _ticketlogic;
-        private readonly IContractLogic<DepartmentEntity, CreateDepartmentRequestContract, UpdateDepartmentRequestContract, DepartmentContract, long> _departmentlogic;
-        private readonly IContractLogic<TicketDepartmentEntity, CreateTicketDepartmentRequestContract, UpdateTicketDepartmentRequestContract, TicketDepartmentContract, long> _contractlogic;
+        public IUnitOfWork _uow;
 
-        public TicketDepartmentController(IContractLogic<DepartmentEntity, CreateDepartmentRequestContract, UpdateDepartmentRequestContract, DepartmentContract, long> departmentlogic,IContractLogic<TicketEntity, CreateTicketRequestContract, UpdateTicketRequestContract, TicketContract, long> ticketlogic,IContractLogic<TicketDepartmentEntity, CreateTicketDepartmentRequestContract, UpdateTicketDepartmentRequestContract, TicketDepartmentContract, long> contractLogic) : base(contractLogic)
+        public TicketDepartmentController(IUnitOfWork uow) : base(uow)
         {
-            _ticketlogic = ticketlogic;
-            _departmentlogic = departmentlogic;
-            _contractlogic = contractLogic;
+            _uow = uow;
         }
         public override async Task<MessageContract<long>> Add(CreateTicketDepartmentRequestContract request, CancellationToken cancellationToken = default)
         {
+            var _ticketlogic = _uow.GetContractLogic<TicketEntity, CreateTicketRequestContract, UpdateTicketRequestContract, TicketContract, long>();
+            var _departmentlogic = _uow.GetContractLogic<DepartmentEntity, CreateDepartmentRequestContract, UpdateDepartmentRequestContract, DepartmentContract, long>();
+            var _contractlogic = _uow.GetContractLogic<TicketDepartmentEntity, CreateTicketDepartmentRequestContract, UpdateTicketDepartmentRequestContract, TicketDepartmentContract, long>();
             var checkTicketId = await _ticketlogic.GetById(new GetIdRequestContract<long>() { Id = request.TicketId });
             var checkDepartmentID = await _departmentlogic.GetById(new GetIdRequestContract<long>() { Id = request.DepartmentId });
             if (checkTicketId.IsSuccess && checkDepartmentID.IsSuccess)

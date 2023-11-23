@@ -17,8 +17,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservices.SupportsM
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservices.SupportsMicroservice.Logics", "EasyMicroservices.SupportsMicroservice.Logics\EasyMicroservices.SupportsMicroservice.Logics.csproj", "{E8CBCF57-5CB3-48D6-AFB5-796AC5B6CEF0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservices.SupportsMicroservice.Services", "EasyMicroservices.SupportsMicroservice.Services\EasyMicroservices.SupportsMicroservice.Services.csproj", "{44F3E28E-7E2D-4137-A4C7-A4A5FB2AB3F8}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservices.SupportsMicroservice.StartUp", "EasyMicroservices.SupportsMicroservice.StartUp\EasyMicroservices.SupportsMicroservice.StartUp.csproj", "{65F43F5A-953C-4A6D-BE3F-5492FC69F3EB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyMicroservices.SupportsMicroservice.Database", "EasyMicroservices.SupportsMicroservice.Database\EasyMicroservices.SupportsMicroservice.Database.csproj", "{6B45CABC-0853-451A-BAD7-270DDE23F155}"
@@ -73,18 +71,6 @@ Global
 		{E8CBCF57-5CB3-48D6-AFB5-796AC5B6CEF0}.Release|x64.Build.0 = Release|Any CPU
 		{E8CBCF57-5CB3-48D6-AFB5-796AC5B6CEF0}.Release|x86.ActiveCfg = Release|Any CPU
 		{E8CBCF57-5CB3-48D6-AFB5-796AC5B6CEF0}.Release|x86.Build.0 = Release|Any CPU
-		{44F3E28E-7E2D-4137-A4C7-A4A5FB2AB3F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{44F3E28E-7E2D-4137-A4C7-A4A5FB2AB3F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{44F3E28E-7E2D-4137-A4C7-A4A5FB2AB3F8}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{44F3E28E-7E2D-4137-A4C7-A4A5FB2AB3F8}.Debug|x64.Build.0 = Debug|Any CPU
-		{44F3E28E-7E2D-4137-A4C7-A4A5FB2AB3F8}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{44F3E28E-7E2D-4137-A4C7-A4A5FB2AB3F8}.Debug|x86.Build.0 = Debug|Any CPU
-		{44F3E28E-7E2D-4137-A4C7-A4A5FB2AB3F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{44F3E28E-7E2D-4137-A4C7-A4A5FB2AB3F8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{44F3E28E-7E2D-4137-A4C7-A4A5FB2AB3F8}.Release|x64.ActiveCfg = Release|Any CPU
-		{44F3E28E-7E2D-4137-A4C7-A4A5FB2AB3F8}.Release|x64.Build.0 = Release|Any CPU
-		{44F3E28E-7E2D-4137-A4C7-A4A5FB2AB3F8}.Release|x86.ActiveCfg = Release|Any CPU
-		{44F3E28E-7E2D-4137-A4C7-A4A5FB2AB3F8}.Release|x86.Build.0 = Release|Any CPU
 		{65F43F5A-953C-4A6D-BE3F-5492FC69F3EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{65F43F5A-953C-4A6D-BE3F-5492FC69F3EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65F43F5A-953C-4A6D-BE3F-5492FC69F3EB}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -141,7 +127,6 @@ Global
 		{6C20E582-6C19-4876-80DF-1657BE05E9C6} = {5095A63E-0C95-4352-8E6B-4586A9340BFB}
 		{854A3BAE-FA97-497B-A46D-0D64BB07A3D6} = {5095A63E-0C95-4352-8E6B-4586A9340BFB}
 		{E8CBCF57-5CB3-48D6-AFB5-796AC5B6CEF0} = {AAC7D1B4-C636-471D-8894-B1FA3D7995FB}
-		{44F3E28E-7E2D-4137-A4C7-A4A5FB2AB3F8} = {AAC7D1B4-C636-471D-8894-B1FA3D7995FB}
 		{65F43F5A-953C-4A6D-BE3F-5492FC69F3EB} = {AAC7D1B4-C636-471D-8894-B1FA3D7995FB}
 		{6B45CABC-0853-451A-BAD7-270DDE23F155} = {DD5CE7AE-185C-4AB5-A7AD-9CCB6051E804}
 		{3953230A-A3AC-414C-8A26-2E1D4605D270} = {DD5CE7AE-185C-4AB5-A7AD-9CCB6051E804}

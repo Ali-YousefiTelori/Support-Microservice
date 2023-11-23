@@ -12,7 +12,7 @@ namespace EasyMicroservices.SupportsMicroservice.Database.Entities
     public class TicketEntity : TicketSchema, IIdSchema<long>
     {
         public long Id { get; set; }
-        public ICollection<TicketHistoryEntity> TicketHistory { get; set; }
-        public ICollection<TicketDepartmentEntity> TicketDepartment { get; set; }
+        public ICollection<TicketHistoryEntity> TicketHistories { get; set; }
+        public ICollection<TicketDepartmentEntity> TicketDepartments { get; set; }
     }
 }
