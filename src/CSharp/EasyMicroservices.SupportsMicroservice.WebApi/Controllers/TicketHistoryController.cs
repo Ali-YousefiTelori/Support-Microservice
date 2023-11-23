@@ -11,18 +11,16 @@ namespace EasyMicroservices.SupportsMicroservice.WebApi.Controllers
 {
     public class TicketHistoryController : SimpleQueryServiceController<TicketHistoryEntity, CreateTicketHistoryRequestContract, UpdateTicketHistoryRequestContract, TicketHistoryContract, long>
     {
-        private readonly IContractLogic<TicketHistoryEntity, CreateTicketHistoryRequestContract, UpdateTicketHistoryRequestContract, TicketHistoryContract, long> _contractlogic;
-        private readonly IContractLogic<TicketEntity, CreateTicketRequestContract, UpdateTicketRequestContract, TicketContract, long> _ticketlogic;
         public IUnitOfWork _uow;
 
         public TicketHistoryController(IUnitOfWork uow) : base(uow)
         {
             _uow = uow;
-            _contractlogic = uow.GetContractLogic<TicketHistoryEntity, CreateTicketHistoryRequestContract, UpdateTicketHistoryRequestContract, TicketHistoryContract, long>();
-            _ticketlogic = uow.GetContractLogic<TicketEntity, CreateTicketRequestContract, UpdateTicketRequestContract, TicketContract, long>();
         }
         public override async Task<MessageContract<long>> Add(CreateTicketHistoryRequestContract request, CancellationToken cancellationToken = default)
         {
+            var _contractlogic = _uow.GetContractLogic<TicketHistoryEntity, CreateTicketHistoryRequestContract, UpdateTicketHistoryRequestContract, TicketHistoryContract, long>();
+            var _ticketlogic = _uow.GetContractLogic<TicketEntity, CreateTicketRequestContract, UpdateTicketRequestContract, TicketContract, long>();
             var checkTicketId = await _ticketlogic.GetById(new GetIdRequestContract<long>() { Id = request.TicketId });
             if (checkTicketId.IsSuccess)
             return await _contractlogic.Add(request, cancellationToken);
@@ -31,6 +29,8 @@ namespace EasyMicroservices.SupportsMicroservice.WebApi.Controllers
         }
         public override async Task<MessageContract<TicketHistoryContract>> Update(UpdateTicketHistoryRequestContract request, CancellationToken cancellationToken = default)
         {
+            var _contractlogic = _uow.GetContractLogic<TicketHistoryEntity, CreateTicketHistoryRequestContract, UpdateTicketHistoryRequestContract, TicketHistoryContract, long>();
+            var _ticketlogic = _uow.GetContractLogic<TicketEntity, CreateTicketRequestContract, UpdateTicketRequestContract, TicketContract, long>();
             var checkTicketId = await _ticketlogic.GetById(new GetIdRequestContract<long>() { Id = request.TicketId });
             if (checkTicketId.IsSuccess)
             return await _contractlogic.Update(request, cancellationToken);
