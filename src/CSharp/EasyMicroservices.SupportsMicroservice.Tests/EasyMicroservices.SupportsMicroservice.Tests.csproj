@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <PackageReference Include="EasyMicroservices.Laboratory" Version="0.0.0.15" />
+    <PackageReference Include="EasyMicroservices.SupportsMicroservice.Clients" Version="0.0.0.3" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.3" />
     <PackageReference Include="xunit" Version="2.6.2" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.5.4">
