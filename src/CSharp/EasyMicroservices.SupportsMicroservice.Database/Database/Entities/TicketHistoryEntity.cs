@@ -12,6 +12,6 @@ namespace EasyMicroservices.SupportsMicroservice.Database.Entities
     {
         public long Id { get; set; }
         public long TicketId { get; set; }
-        public TicketEntity TicketEntity { get; set; }
+        public TicketEntity Ticket { get; set; }
     }
 }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EasyMicroservices.SupportsMicroservice.Database.Entities
 {
-    public class TicketAssignEntity : TicketAssignSchema, IIdSchema<long>
+    public class TicketDiscussionEntity : TicketDiscussionSchema , IIdSchema<long>
     {
         public long Id { get; set; }
         public long TicketId { get; set; }
