@@ -4,6 +4,7 @@ using EasyMicroservices.SupportsMicroservice.Database.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EasyMicroservices.SupportsMicroservice.Migrations
 {
     [DbContext(typeof(SupportContext))]
-    partial class SupportContextModelSnapshot : ModelSnapshot
+    [Migration("20231128144810_Add_isuniqe")]
+    partial class Add_isuniqe
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -101,7 +104,8 @@ namespace EasyMicroservices.SupportsMicroservice.Migrations
 
                     b.HasIndex("ModificationDateTime");
 
-                    b.HasIndex("TicketId");
+                    b.HasIndex("TicketId")
+                        .IsUnique();
 
                     b.HasIndex("UniqueIdentity");
 
@@ -150,7 +154,8 @@ namespace EasyMicroservices.SupportsMicroservice.Migrations
 
                     b.HasIndex("ModificationDateTime");
 
-                    b.HasIndex("TicketId");
+                    b.HasIndex("TicketId")
+                        .IsUnique();
 
                     b.HasIndex("UniqueIdentity");
 

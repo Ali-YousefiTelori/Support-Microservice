@@ -1486,55 +1486,6 @@
         }
       }
     },
-    "/api/TicketAssign/Update": {
-      "put": {
-        "tags": [
-          "TicketAssign"
-        ],
-        "operationId": "Update3",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateTicketAssignRequestContract"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateTicketAssignRequestContract"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateTicketAssignRequestContract"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/TicketAssignContractMessageContract"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/TicketAssignContractMessageContract"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/TicketAssignContractMessageContract"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/api/TicketAssign/AddBulk": {
       "post": {
         "tags": [
@@ -1577,6 +1528,55 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketAssign/Update": {
+      "put": {
+        "tags": [
+          "TicketAssign"
+        ],
+        "operationId": "Update3",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketAssignRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketAssignRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketAssignRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketAssignContractMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketAssignContractMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketAssignContractMessageContract"
                 }
               }
             }
@@ -2869,27 +2869,27 @@
         }
       }
     },
-    "/api/TicketHistory/Add": {
+    "/api/TicketDiscussion/Add": {
       "post": {
         "tags": [
-          "TicketHistory"
+          "TicketDiscussion"
         ],
         "operationId": "Add5",
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateTicketHistoryRequestContract"
+                "$ref": "#/components/schemas/CreateTicketDiscussionRequestContract"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateTicketHistoryRequestContract"
+                "$ref": "#/components/schemas/CreateTicketDiscussionRequestContract"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateTicketHistoryRequestContract"
+                "$ref": "#/components/schemas/CreateTicketDiscussionRequestContract"
               }
             }
           }
@@ -2918,27 +2918,27 @@
         }
       }
     },
-    "/api/TicketHistory/Update": {
-      "put": {
+    "/api/TicketDiscussion/AddBulk": {
+      "post": {
         "tags": [
-          "TicketHistory"
+          "TicketDiscussion"
         ],
-        "operationId": "Update5",
+        "operationId": "AddBulk5",
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateTicketHistoryRequestContract"
+                "$ref": "#/components/schemas/CreateTicketDiscussionRequestContractCreateBulkRequestContract"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateTicketHistoryRequestContract"
+                "$ref": "#/components/schemas/CreateTicketDiscussionRequestContractCreateBulkRequestContract"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateTicketHistoryRequestContract"
+                "$ref": "#/components/schemas/CreateTicketDiscussionRequestContractCreateBulkRequestContract"
               }
             }
           }
@@ -2949,17 +2949,684 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/TicketHistoryContractMessageContract"
+                  "$ref": "#/components/schemas/MessageContract"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/TicketHistoryContractMessageContract"
+                  "$ref": "#/components/schemas/MessageContract"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/TicketHistoryContractMessageContract"
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketDiscussion/Update": {
+      "put": {
+        "tags": [
+          "TicketDiscussion"
+        ],
+        "operationId": "Update5",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketDiscussionRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketDiscussionRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketDiscussionRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketDiscussionContractMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketDiscussionContractMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketDiscussionContractMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketDiscussion/UpdateChangedValuesOnly": {
+      "put": {
+        "tags": [
+          "TicketDiscussion"
+        ],
+        "operationId": "UpdateChangedValuesOnly5",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketDiscussionRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketDiscussionRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketDiscussionRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketDiscussionContractMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketDiscussionContractMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketDiscussionContractMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketDiscussion/UpdateBulk": {
+      "put": {
+        "tags": [
+          "TicketDiscussion"
+        ],
+        "operationId": "UpdateBulk5",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketDiscussionRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketDiscussionRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketDiscussionRequestContractUpdateBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketDiscussion/UpdateBulkChangedValuesOnly": {
+      "put": {
+        "tags": [
+          "TicketDiscussion"
+        ],
+        "operationId": "UpdateBulkChangedValuesOnly5",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketDiscussionRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketDiscussionRequestContractUpdateBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketDiscussionRequestContractUpdateBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketDiscussion/HardDeleteById": {
+      "delete": {
+        "tags": [
+          "TicketDiscussion"
+        ],
+        "operationId": "HardDeleteById5",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketDiscussion/HardDeleteBulkByIds": {
+      "delete": {
+        "tags": [
+          "TicketDiscussion"
+        ],
+        "operationId": "HardDeleteBulkByIds5",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64DeleteBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketDiscussion/SoftDeleteById": {
+      "delete": {
+        "tags": [
+          "TicketDiscussion"
+        ],
+        "operationId": "SoftDeleteById5",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketDiscussion/SoftDeleteBulkByIds": {
+      "delete": {
+        "tags": [
+          "TicketDiscussion"
+        ],
+        "operationId": "SoftDeleteBulkByIds5",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteBulkRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteBulkRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64SoftDeleteBulkRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketDiscussion/GetById": {
+      "post": {
+        "tags": [
+          "TicketDiscussion"
+        ],
+        "operationId": "GetById5",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64GetIdRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64GetIdRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Int64GetIdRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketDiscussionContractMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketDiscussionContractMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketDiscussionContractMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketDiscussion/GetByUniqueIdentity": {
+      "post": {
+        "tags": [
+          "TicketDiscussion"
+        ],
+        "operationId": "GetByUniqueIdentity5",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetUniqueIdentityRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetUniqueIdentityRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetUniqueIdentityRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketDiscussionContractMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketDiscussionContractMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketDiscussionContractMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketDiscussion/Filter": {
+      "post": {
+        "tags": [
+          "TicketDiscussion"
+        ],
+        "operationId": "Filter5",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FilterRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FilterRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FilterRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketDiscussionContractListMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketDiscussionContractListMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketDiscussionContractListMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketDiscussion/GetAll": {
+      "get": {
+        "tags": [
+          "TicketDiscussion"
+        ],
+        "operationId": "GetAll5",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketDiscussionContractListMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketDiscussionContractListMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketDiscussionContractListMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketDiscussion/GetAllByUniqueIdentity": {
+      "post": {
+        "tags": [
+          "TicketDiscussion"
+        ],
+        "operationId": "GetAllByUniqueIdentity5",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetUniqueIdentityRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetUniqueIdentityRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetUniqueIdentityRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketDiscussionContractListMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketDiscussionContractListMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketDiscussionContractListMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TicketHistory/Add": {
+      "post": {
+        "tags": [
+          "TicketHistory"
+        ],
+        "operationId": "Add6",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTicketHistoryRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTicketHistoryRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateTicketHistoryRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int64MessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int64MessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Int64MessageContract"
                 }
               }
             }
@@ -2972,7 +3639,7 @@
         "tags": [
           "TicketHistory"
         ],
-        "operationId": "AddBulk5",
+        "operationId": "AddBulk6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3016,12 +3683,61 @@
         }
       }
     },
+    "/api/TicketHistory/Update": {
+      "put": {
+        "tags": [
+          "TicketHistory"
+        ],
+        "operationId": "Update6",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketHistoryRequestContract"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketHistoryRequestContract"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTicketHistoryRequestContract"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketHistoryContractMessageContract"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketHistoryContractMessageContract"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TicketHistoryContractMessageContract"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/TicketHistory/UpdateChangedValuesOnly": {
       "put": {
         "tags": [
           "TicketHistory"
         ],
-        "operationId": "UpdateChangedValuesOnly5",
+        "operationId": "UpdateChangedValuesOnly6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3070,7 +3786,7 @@
         "tags": [
           "TicketHistory"
         ],
-        "operationId": "UpdateBulk5",
+        "operationId": "UpdateBulk6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3119,7 +3835,7 @@
         "tags": [
           "TicketHistory"
         ],
-        "operationId": "UpdateBulkChangedValuesOnly5",
+        "operationId": "UpdateBulkChangedValuesOnly6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3168,7 +3884,7 @@
         "tags": [
           "TicketHistory"
         ],
-        "operationId": "HardDeleteById5",
+        "operationId": "HardDeleteById6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3217,7 +3933,7 @@
         "tags": [
           "TicketHistory"
         ],
-        "operationId": "HardDeleteBulkByIds5",
+        "operationId": "HardDeleteBulkByIds6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3266,7 +3982,7 @@
         "tags": [
           "TicketHistory"
         ],
-        "operationId": "SoftDeleteById5",
+        "operationId": "SoftDeleteById6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3315,7 +4031,7 @@
         "tags": [
           "TicketHistory"
         ],
-        "operationId": "SoftDeleteBulkByIds5",
+        "operationId": "SoftDeleteBulkByIds6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3364,7 +4080,7 @@
         "tags": [
           "TicketHistory"
         ],
-        "operationId": "GetById5",
+        "operationId": "GetById6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3413,7 +4129,7 @@
         "tags": [
           "TicketHistory"
         ],
-        "operationId": "GetByUniqueIdentity5",
+        "operationId": "GetByUniqueIdentity6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3462,7 +4178,7 @@
         "tags": [
           "TicketHistory"
         ],
-        "operationId": "Filter5",
+        "operationId": "Filter6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3511,7 +4227,7 @@
         "tags": [
           "TicketHistory"
         ],
-        "operationId": "GetAll5",
+        "operationId": "GetAll6",
         "responses": {
           "200": {
             "description": "Success",
@@ -3541,7 +4257,7 @@
         "tags": [
           "TicketHistory"
         ],
-        "operationId": "GetAllByUniqueIdentity5",
+        "operationId": "GetAllByUniqueIdentity6",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3590,7 +4306,7 @@
         "tags": [
           "TicketSupportTimeHistory"
         ],
-        "operationId": "Add6",
+        "operationId": "Add7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3639,7 +4355,7 @@
         "tags": [
           "TicketSupportTimeHistory"
         ],
-        "operationId": "AddBulk6",
+        "operationId": "AddBulk7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3688,7 +4404,7 @@
         "tags": [
           "TicketSupportTimeHistory"
         ],
-        "operationId": "Update6",
+        "operationId": "Update7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3737,7 +4453,7 @@
         "tags": [
           "TicketSupportTimeHistory"
         ],
-        "operationId": "UpdateChangedValuesOnly6",
+        "operationId": "UpdateChangedValuesOnly7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3786,7 +4502,7 @@
         "tags": [
           "TicketSupportTimeHistory"
         ],
-        "operationId": "UpdateBulk6",
+        "operationId": "UpdateBulk7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3835,7 +4551,7 @@
         "tags": [
           "TicketSupportTimeHistory"
         ],
-        "operationId": "UpdateBulkChangedValuesOnly6",
+        "operationId": "UpdateBulkChangedValuesOnly7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3884,7 +4600,7 @@
         "tags": [
           "TicketSupportTimeHistory"
         ],
-        "operationId": "HardDeleteById6",
+        "operationId": "HardDeleteById7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3933,7 +4649,7 @@
         "tags": [
           "TicketSupportTimeHistory"
         ],
-        "operationId": "HardDeleteBulkByIds6",
+        "operationId": "HardDeleteBulkByIds7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3982,7 +4698,7 @@
         "tags": [
           "TicketSupportTimeHistory"
         ],
-        "operationId": "SoftDeleteById6",
+        "operationId": "SoftDeleteById7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4031,7 +4747,7 @@
         "tags": [
           "TicketSupportTimeHistory"
         ],
-        "operationId": "SoftDeleteBulkByIds6",
+        "operationId": "SoftDeleteBulkByIds7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4080,7 +4796,7 @@
         "tags": [
           "TicketSupportTimeHistory"
         ],
-        "operationId": "GetById6",
+        "operationId": "GetById7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4129,7 +4845,7 @@
         "tags": [
           "TicketSupportTimeHistory"
         ],
-        "operationId": "GetByUniqueIdentity6",
+        "operationId": "GetByUniqueIdentity7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4178,7 +4894,7 @@
         "tags": [
           "TicketSupportTimeHistory"
         ],
-        "operationId": "Filter6",
+        "operationId": "Filter7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4227,7 +4943,7 @@
         "tags": [
           "TicketSupportTimeHistory"
         ],
-        "operationId": "GetAll6",
+        "operationId": "GetAll7",
         "responses": {
           "200": {
             "description": "Success",
@@ -4257,7 +4973,7 @@
         "tags": [
           "TicketSupportTimeHistory"
         ],
-        "operationId": "GetAllByUniqueIdentity6",
+        "operationId": "GetAllByUniqueIdentity7",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4391,6 +5107,39 @@
             "nullable": true,
             "items": {
               "$ref": "#/components/schemas/CreateTicketDepartmentRequestContract"
+            }
+          }
+        }
+      },
+      "CreateTicketDiscussionRequestContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "ticketId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "content": {
+            "type": "string",
+            "nullable": true
+          },
+          "uniqueIdentity": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "CreateTicketDiscussionRequestContractCreateBulkRequestContract": {
+        "title": "CreateBulkRequestContract<CreateTicketDiscussionRequestContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "items": {
+            "title": "List<CreateTicketDiscussionRequestContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/CreateTicketDiscussionRequestContract"
             }
           }
         }
@@ -5220,6 +5969,98 @@
           }
         }
       },
+      "TicketDiscussionContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "ticketId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "content": {
+            "type": "string",
+            "nullable": true
+          },
+          "uniqueIdentity": {
+            "type": "string",
+            "nullable": true
+          },
+          "isDeleted": {
+            "type": "boolean"
+          },
+          "deletedDateTime": {
+            "title": "Nullable<DateTime>",
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "creationDateTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modificationDateTime": {
+            "title": "Nullable<DateTime>",
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        }
+      },
+      "TicketDiscussionContractListMessageContract": {
+        "title": "ListMessageContract<TicketDiscussionContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorContract"
+          },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
+          },
+          "result": {
+            "title": "List<TicketDiscussionContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/TicketDiscussionContract"
+            }
+          },
+          "totalCount": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "hasItems": {
+            "type": "boolean",
+            "readOnly": true
+          }
+        }
+      },
+      "TicketDiscussionContractMessageContract": {
+        "title": "MessageContract<TicketDiscussionContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "isSuccess": {
+            "type": "boolean"
+          },
+          "error": {
+            "$ref": "#/components/schemas/ErrorContract"
+          },
+          "success": {
+            "$ref": "#/components/schemas/SuccessContract"
+          },
+          "result": {
+            "$ref": "#/components/schemas/TicketDiscussionContract"
+          }
+        }
+      },
       "TicketHistoryContract": {
         "type": "object",
         "additionalProperties": false,
@@ -5565,6 +6406,43 @@
             "nullable": true,
             "items": {
               "$ref": "#/components/schemas/UpdateTicketDepartmentRequestContract"
+            }
+          }
+        }
+      },
+      "UpdateTicketDiscussionRequestContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "ticketId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "content": {
+            "type": "string",
+            "nullable": true
+          },
+          "uniqueIdentity": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "UpdateTicketDiscussionRequestContractUpdateBulkRequestContract": {
+        "title": "UpdateBulkRequestContract<UpdateTicketDiscussionRequestContract>",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "items": {
+            "title": "List<UpdateTicketDiscussionRequestContract>",
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/UpdateTicketDiscussionRequestContract"
             }
           }
         }

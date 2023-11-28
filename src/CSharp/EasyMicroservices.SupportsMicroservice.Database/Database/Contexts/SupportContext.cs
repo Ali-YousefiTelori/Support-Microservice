@@ -18,6 +18,8 @@ namespace EasyMicroservices.SupportsMicroservice.Database.Contexts
         public DbSet<TicketEntity> Tickets { get; set; }
         public DbSet<TicketHistoryEntity> TicketHistories { get; set; }
         public DbSet<TicketSupportTimeHistoryEntity> TicketSupportTimeHistories { get; set; }
+        public DbSet<TicketDiscussionEntity> TicketDiscussions { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -38,7 +40,7 @@ namespace EasyMicroservices.SupportsMicroservice.Database.Contexts
             {
                 model.HasKey(x => x.Id);
 
-                model.HasOne(x => x.TicketEntity)
+                model.HasOne(x => x.Ticket)
                 .WithMany(x => x.TicketHistories)
                 .HasForeignKey(x => x.TicketId);
             });
@@ -50,23 +52,40 @@ namespace EasyMicroservices.SupportsMicroservice.Database.Contexts
             {
                 model.HasKey(x => x.Id);
 
-                modelBuilder.Entity<TicketDepartmentEntity>()
-                .HasOne(bc => bc.Ticket)
+                model.HasOne(bc => bc.Ticket)
                 .WithMany(b => b.TicketDepartments)
                 .HasForeignKey(bc => bc.TicketId);
 
-                modelBuilder.Entity<TicketDepartmentEntity>()
-                .HasOne(bc => bc.Department)
+                model.HasOne(bc => bc.Department)
                 .WithMany(b => b.TicketDepartments)
                 .HasForeignKey(bc => bc.DepartmentId);
+
+
             });
             modelBuilder.Entity<TicketSupportTimeHistoryEntity>(model =>
             {
                 model.HasKey(x => x.Id);
+
+                model.HasOne(bc => bc.Ticket)
+                .WithMany(b => b.TicketSupportTimeHistories)
+                .HasForeignKey(bc => bc.TicketId);
             });
             modelBuilder.Entity<TicketAssignEntity>(model =>
             {
                 model.HasKey(x => x.Id);
+
+                model.HasOne(bc => bc.Ticket)
+                .WithMany(b => b.TicketAssigns)
+                .HasForeignKey(bc => bc.TicketId);
+
+            });
+            modelBuilder.Entity<TicketDiscussionEntity>(model =>
+            {
+                model.HasKey(x => x.Id);
+
+                model.HasOne(bc => bc.Ticket)
+                .WithMany(b => b.TicketDiscussions)
+                .HasForeignKey(bc => bc.TicketId);
             });
         }
     }

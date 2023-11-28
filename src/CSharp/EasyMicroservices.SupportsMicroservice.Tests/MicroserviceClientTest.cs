@@ -5,7 +5,7 @@ namespace EasyMicroservices.SupportsMicroservice.Clients.Tests
 {
     public class MicroserviceClientTest
     {
-        const int Port = 1201;
+        const int Port = 2001;
         string _routeAddress = "";
         public static HttpClient HttpClient { get; set;  } = new HttpClient();
         public MicroserviceClientTest()
@@ -42,12 +42,20 @@ Content-Length: 0
             }
         }
         [Fact]
+        public async Task GetAllTicket()
+        {
+            var microserviceClient = new Supports.GeneratedServices.TicketClient(_routeAddress, HttpClient);
+            var getAll = await microserviceClient.GetAllAsync();
+            Assert.True(getAll.IsSuccess);
+        }
+        [Fact]
         public async Task GetAllTestTest()
         {
-            //await OnInitialize();
-            //var microserviceClient = new Supports.GeneratedServices.MicroserviceClient(_routeAddress, HttpClient);
-            //var microservices = await microserviceClient.GetAllAsync();
-            //Assert.True(microservices.IsSuccess);
+            await OnInitialize();
+            var microserviceClient = new Supports.GeneratedServices.DepartmentClient(_routeAddress, HttpClient);
+
+            var microservices = await microserviceClient.GetAllAsync();
+            Assert.True(microservices.IsSuccess);
         }
     }
 }
