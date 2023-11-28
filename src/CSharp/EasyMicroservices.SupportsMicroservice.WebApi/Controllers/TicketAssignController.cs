@@ -17,21 +17,5 @@ namespace EasyMicroservices.SupportsMicroservice.WebApi.Controllers
         {
             _uow = uow;
         }
-        public override async Task<MessageContract<long>> Add(CreateTicketAssignRequestContract request, CancellationToken cancellationToken = default)
-        {
-            var _ticketlogic = _uow.GetContractLogic<TicketEntity, CreateTicketRequestContract, UpdateTicketRequestContract, TicketContract, long>();
-            var checkTicketId = await _ticketlogic.GetById(new GetIdRequestContract<long>(){ Id = request.TicketId});
-            if (checkTicketId.IsSuccess)
-            return await base.Add(request, cancellationToken);
-            return (EasyMicroservices.ServiceContracts.FailedReasonType.Empty, "TicketId is incorrect");
-        }
-        public override async Task<MessageContract<TicketAssignContract>> Update(UpdateTicketAssignRequestContract request, CancellationToken cancellationToken = default)
-        {
-            var _ticketlogic = _uow.GetContractLogic<TicketEntity, CreateTicketRequestContract, UpdateTicketRequestContract, TicketContract, long>();
-            var checkTicketId = await _ticketlogic.GetById(new GetIdRequestContract<long>() { Id = request.TicketId });
-            if (checkTicketId.IsSuccess)
-            return await base.Update(request, cancellationToken);
-            return (EasyMicroservices.ServiceContracts.FailedReasonType.Empty, "TicketId is incorrect");
-        }
     }
 }

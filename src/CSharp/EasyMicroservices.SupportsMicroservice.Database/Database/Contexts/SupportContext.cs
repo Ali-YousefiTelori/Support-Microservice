@@ -59,6 +59,9 @@ namespace EasyMicroservices.SupportsMicroservice.Database.Contexts
                 model.HasOne(bc => bc.Department)
                 .WithMany(b => b.TicketDepartments)
                 .HasForeignKey(bc => bc.DepartmentId);
+
+                model.HasIndex(bc => bc.TicketId).IsUnique();
+
             });
             modelBuilder.Entity<TicketSupportTimeHistoryEntity>(model =>
             {
@@ -75,6 +78,8 @@ namespace EasyMicroservices.SupportsMicroservice.Database.Contexts
                 model.HasOne(bc => bc.Ticket)
                 .WithMany(b => b.TicketAssigns)
                 .HasForeignKey(bc => bc.TicketId);
+
+                model.HasIndex(bc => bc.TicketId).IsUnique();
             });
             modelBuilder.Entity<TicketDiscussionEntity>(model =>
             {
