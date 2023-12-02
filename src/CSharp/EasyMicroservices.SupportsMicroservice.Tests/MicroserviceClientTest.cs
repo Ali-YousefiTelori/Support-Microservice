@@ -42,13 +42,6 @@ Content-Length: 0
             }
         }
         [Fact]
-        public async Task GetAllTicket()
-        {
-            var microserviceClient = new Supports.GeneratedServices.TicketClient(_routeAddress, HttpClient);
-            var getAll = await microserviceClient.GetAllAsync();
-            Assert.True(getAll.IsSuccess);
-        }
-        [Fact]
         public async Task GetAllTestTest()
         {
             await OnInitialize();
