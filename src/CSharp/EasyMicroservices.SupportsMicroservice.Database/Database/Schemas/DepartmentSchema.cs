@@ -10,6 +10,5 @@ namespace EasyMicroservices.SupportsMicroservice.Database.Schemas
 {
     public class DepartmentSchema : FullAbilitySchema
     {
-        public string Title { get; set; }
     }
 }

@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Contents.GeneratedServices;
+using EasyMicroservices.ContentsMicroservice.Clients.Attributes;
+using EasyMicroservices.SupportsMicroservice.Contracts.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +11,8 @@ namespace EasyMicroservices.SupportsMicroservice.Contracts.Requests
 {
     public class CreateDepartmentRequestContract
     {
-        public string Title { get; set; }
+        [ContentLanguage(nameof(DepartmentContract.Title))]
+        public List<Common.LanguageDataContract> Title { get; set; }
         public string UniqueIdentity { get; set; }
     }
 }

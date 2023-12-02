@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace EasyMicroservices.SupportsMicroservice.Contracts.Requests
 {
-    public class UpdateDepartmentRequestContract : CreateDepartmentRequestContract
+    public class GetByLanguageRequestContract
     {
-        public long Id { get; set; }
+        public string Language { get; set; }
     }
 }

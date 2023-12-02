@@ -10,6 +10,5 @@ namespace EasyMicroservices.SupportsMicroservice.Database.Schemas
 {
     public class TicketHistorySchema : FullAbilitySchema
     {
-        public string Content { get; set; }
     }
 }
