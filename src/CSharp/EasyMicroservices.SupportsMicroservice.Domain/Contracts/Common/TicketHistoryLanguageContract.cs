@@ -1,18 +1,17 @@
 ﻿using EasyMicroservices.ContentsMicroservice.Clients.Attributes;
 using EasyMicroservices.Cores.Interfaces;
+using EasyMicroservices.SupportsMicroservice.Contracts.Common;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace EasyMicroservices.SupportsMicroservice.Contracts.Common
+namespace EasyMicroservices.OrderingMicroservice.Contracts.Common
 {
-    public class DepartmentContract : IUniqueIdentitySchema, ISoftDeleteSchema, IDateTimeSchema
+    public class TicketHistoryLanguageContract : IUniqueIdentitySchema, ISoftDeleteSchema, IDateTimeSchema
     {
         public long Id { get; set; }
-        [ContentLanguage]
-        public string Title { get; set; }
+
+        [ContentLanguage(nameof(TicketHistoryContract.Content))]
+        public List<LanguageDataContract> Contents { get; set; }
         public string UniqueIdentity { get; set; }
         public bool IsDeleted { get; set; }
         public DateTime? DeletedDateTime { get; set; }

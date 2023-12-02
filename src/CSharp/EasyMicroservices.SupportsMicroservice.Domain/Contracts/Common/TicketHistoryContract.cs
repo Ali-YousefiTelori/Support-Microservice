@@ -1,4 +1,5 @@
-﻿using EasyMicroservices.Cores.Interfaces;
+﻿using EasyMicroservices.ContentsMicroservice.Clients.Attributes;
+using EasyMicroservices.Cores.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,7 @@ namespace EasyMicroservices.SupportsMicroservice.Contracts.Common
     {
         public long Id { get; set; }
         public long TicketId { get; set; }
+        [ContentLanguage]
         public string Content { get; set; }
         public string UniqueIdentity { get; set; }
         public bool IsDeleted { get; set; }

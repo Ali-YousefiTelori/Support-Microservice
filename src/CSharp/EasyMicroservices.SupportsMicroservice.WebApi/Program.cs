@@ -18,7 +18,7 @@ namespace EasyMicroservices.SupportsMicroservice.WebApi
         }
 
         static WebApplicationBuilder CreateBuilder(string[] args)
-        {
+        {  
             var app = StartUpExtensions.Create<SupportContext>(args);
             app.Services.Builder<SupportContext>();
             app.Services.AddTransient((serviceProvider) => new UnitOfWork(serviceProvider));
